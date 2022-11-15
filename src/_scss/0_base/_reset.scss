@@ -2,6 +2,19 @@
 /*------------------------------------------------------------
     Reset
 ------------------------------------------------------------*/
+@font-face {
+    font-family: Noto-Sans-JP;
+    src: url("./assets/font/NotoSansJP.otf");
+}
+@font-face {
+    font-family: Noto-Serif-JP;
+    src: url("./assets/font/NotoSerifJP.otf");
+}
+@font-face {
+    font-family: Oswald;
+    src: url("./assets/font/Oswald.otf");
+}
+
 html,
 body,
 div,
@@ -66,7 +79,7 @@ time,
 mark,
 audio,
 video {
-    // font-size: 1em;
+    font-size: 1.4rem;
     margin: 0;
     padding: 0;
     border: 0;

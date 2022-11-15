@@ -1,44 +1,51 @@
-<%- include('_layouts/layout', { title: 'Home page' }); -%>
+<%- include('_layouts/layout', { title: 'COCO MGM Design' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="Home page">
-<!-- @@meta -->
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
 
-<!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
-
-  <section class="p-top1">
+  <!-- @content -->
+  <main class="p-top">
     <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
+      <section class="c-case">
+        <h2 class="c-case__title">
+          家づくりの、こんな<span class="c-case__title c-case__titleedit">不安やお悩みないですか？</span>
+        </h2>
+        <div class="c-case__row c-flex">
+          <div class="c-case__col">
+            <h3 class="c-case__num">01</h3>
+            <div class="c-case__textbox">
+              <p class="c-case__text">子育てにはどんな家が良いんだろう？</p>
+            </div>
+          </div>
+          <div class="c-case__col">
+            <h3 class="c-case__num c-case__num--02">02</h3>
+            <div class="c-case__textbox">
+              <p class="c-case__text">理想の家って実現できるの？</p>
+              <span class="c-case__label">いろいろとこだわった</span>
+            </div>            
+          </div>
+          <div class="c-case__col">
+            <h3 class="c-case__num c-case__num--03">03</h3>
+            <div class="c-case__textbox">
+              <p class="c-case__text">暮らしのスタイルがイメージできない</p>
+              <span class="c-case__label">家は建てたいけど</span>
+            </div>            
+          </div>
+        </div>
+      </section>
+      <section class="c-model">
+        <h3>
+          <span class="c-model__subblack">はじめての家づくりが具体的に進む、ご来店の</span><span class="c-model__subblue">3つのメリット</span>
+        </h3>
+        <h2 class="c-model__title">WELCOME TO MODELHOUSE</h2>
+        <div class="c-model__list">
+          <div class="c-model__item">
+            <div class="c-model__colleft"></div>
+            <div class="c-model__colright"></div>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</main>
-<!-- @@content -->
-
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->
+  </main>
+  <!-- @@content -->

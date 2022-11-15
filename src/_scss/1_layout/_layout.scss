@@ -3,65 +3,166 @@
 body {
     font-family: $main-fonts;
     font-size: 1.4rem;
-    min-width: $base-width;
+    max-width: $base-width;
+    min-width: 375px;
+    width: 100%;
+    margin: 0 auto;
     line-height: 1.5;
-    @include sp {
-        min-width: 320px;
-    }
+
 }
+
 //-------------------------------------------------------
 main {
     // padding: 0px 0 100px;
 }
 
 section {
-    padding: 50px 0 90px;
+    padding: 50px 0;
+}
+
+.c-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 //-------------------------------------------------------
 .l-container {
-    width: $base-width;
+    max-width: $base-width;
     margin: 0 auto;
+
+    @include sp {
+        max-width: 375px;
+    }
 }
+
 //-------------------------------------------------------
-.c-mainvisual {
-    margin-top: -63px;
-    padding: 0;
-    height: 700px;
-    background: url("/assets/img/bg-header.jpg") no-repeat center;
-    background-size: cover;
-    color: #fff;
 
-    &__inner {
-        position: relative;
-        top: 50%;
-        transform: translate(0%, -50%);
-        padding-top: 63px;
-        text-align: center;
-    }
+//-----------------section case------------------
+.c-case {
+    padding: 50px 40px;
 
-    h2 {
-        width: 100%;
-        flex-basis: 100%;
-        font-size: 8rem;
+    .c-case__title {
+        margin-top: 19px;
+        font-family: "Noto Sans JP", sans-serif;
+        color: $title-color;
+        font-size: 3.6rem;
         font-weight: 400;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 2;
     }
 
-    p {
+    .c-case__titleedit {
+        margin-left: 8px;
+    }
+
+    .c-case__row {
+        position: relative;
+        max-width: 1546px;
         width: 100%;
-        font-size: 2rem;
+        min-width: 375px;
+        margin: auto;
+        padding: 14px 0;
     }
 
-    .c-btn1 {
-        margin-top: 50px;
+    .c-case__col {
+        width: 470px;
+        position: relative;
     }
 
-    //==================
-    &--subpage {
-        height: 300px;
+    .c-case__num {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 21.4rem;
+        line-height: 1;
+        letter-spacing: 0;
+        margin-left: 27px;
+        width: 245px;
+        color: #ededed;
+    
+        &::after {
+            content: "case";
+            position: absolute;
+            letter-spacing: 5.5px;
+            font-weight: bold;
+            font-size: 2.4rem;
+            top: 38.5%;
+            left: 23%;
+            color: #c7c7c7;
+        }
+    }
+    
+    .c-case__num--02 {
+        margin-left: 14px;
+    
+        &::after {
+            left: 22%;
+        }
+    }
+    
+    .c-case__num--03 {
+        margin-left: 11px;
+    
+        &::after {
+            left: 21%;
+        }
+    }
 
-        h2 {
-            font-size: 5rem;
+    .c-case__textbox {
+        position: relative;
+        background-color: $title-color;
+        width: 470px;
+        height: 126px;
+        padding: 45px;
+        border-radius: 10px;
+        margin-top: -5px;
+
+        .c-case__text {
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 900;
+            text-align: center;
+            letter-spacing: -2px;
+            line-height: 1.5;
+        }
+
+        &:hover {
+            opacity: 0.75;
+            filter: blur(5px);
+            box-shadow: 7px 7px #68696c;
+        }
+
+        &:focus {
+            opacity: 0.75;
+            filter: blur(5px);
+            box-shadow: 7px 7px #68696c;
+        }
+
+        &::before {
+            content: "";
+            border-width: 10px 1px 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent #000;
+            display: block;
+            position: absolute;
+            top: -10%;
+            left: 50%;
+        }
+
+        .c-case__label {
+            display: block;
+            position: absolute;
+            background-color: #7a89a8;
+            color: #fff;
+            letter-spacing: -2px;
+            line-height: 1;
+            border-radius: 18px;
+            padding: 6px 30px 11px 23px;
+            top: -12px;
+            right: -13px;
+            font-size: 1.8rem;
+            font-family: "Noto Serif JP";
         }
     }
 }
