@@ -107,26 +107,19 @@ section {
         &::after {
             left: 21%;
         }
-    }
+    }   
+
 
     .c-case__textbox {
         position: relative;
         background-color: $title-color;
         width: 470px;
         height: 126px;
-        padding: 45px;
+        padding: 44px 0;
         border-radius: 10px;
         margin-top: -5px;
 
-        .c-case__text {
-            color: #fff;
-            font-size: 2.4rem;
-            font-weight: 900;
-            text-align: center;
-            letter-spacing: -2px;
-            line-height: 1.5;
-        }
-
+        
         &:hover {
             opacity: 0.75;
             filter: blur(5px);
@@ -141,28 +134,90 @@ section {
 
         &::before {
             content: "";
-            border-width: 10px 1px 10px 10px;
+            border-width: 0 20px 28px 3px;
             border-style: solid;
             border-color: transparent transparent #000;
             display: block;
             position: absolute;
-            top: -10%;
-            left: 50%;
-        }
-
-        .c-case__label {
-            display: block;
-            position: absolute;
-            background-color: #7a89a8;
-            color: #fff;
-            letter-spacing: -2px;
-            line-height: 1;
-            border-radius: 18px;
-            padding: 6px 30px 11px 23px;
-            top: -12px;
-            right: -13px;
-            font-size: 1.8rem;
-            font-family: "Noto Serif JP";
-        }
+            top: -21%;
+            left: 29%;
+        }        
     }
+
+    .c-case__text {
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 900;
+        letter-spacing: -1.1px;
+        line-height: 1.5;
+    }
+
+    .c-case__label {
+        display: block;
+        width: 212px;
+        height: 35px;
+        position: absolute;
+        background-color: #7a89a8;
+        border-radius: 18px;
+        top: -12px;
+        right: -13px;            
+    }
+
+    .c-case__label--text {
+        color: #fff;
+        letter-spacing: -1.7px;
+        line-height: 1.7;
+        font-size: 1.8rem;
+        font-family: "Noto Serif JP", sans-serif;
+        padding-left: 21px;
+    }
+
+    .c-case__label--textedit {
+        padding-left: 39px;
+        letter-spacing: 0;
+    }
+
+    .c-case01 {
+        padding-left: 45px;
+    }
+
+    .c-case02 {
+        padding-left: 93px;
+    }
+
+    .c-case03 {
+        padding-left: 46px;
+        letter-spacing: -1.8px;
+    }
+}
+
+.c-model {
+    margin: 0 auto;
+    padding: 45px 0;
+
+    .c-model__subtitle {
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: 400;
+        font-family: "Noto Sans JP", sans-serif;
+        color: $text-color;
+    }    
+
+    .c-model__subblue {
+        color: $text-blue;
+        font-size: 4.6rem;
+        font-weight: 400;
+        font-family: "Noto Serif JP", sans-serif;
+        margin-left: 10px;
+    }
+
+    .c-model__title {
+        font-size: 4.8rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.7;
+        letter-spacing: 4.7px;
+    }
+
 }
