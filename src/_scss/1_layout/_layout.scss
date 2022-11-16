@@ -342,11 +342,104 @@ section {
     }
 }
 
-.c-slider {
-    max-width: 1440px;
+.c-design {
+    .c-design__slick {
+        position: relative;
+        width: 1440px;
 
-    .c-slider__slide {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1205px;
+            height: 527px;
+            top: 83.5%;
+            right: -33.5%;
+            z-index: -1;
+            background-color: #ededed;
+        }
+    }
+
+    .c-design__prev {
+        position: absolute;
+        background-image: url("./assets/img/prev.svg");
+        display: block;
+        width: 53px;
+        height: 53px;
+        cursor: pointer;
+        right: 73px;
+        bottom: -89px;
+    }
+
+    .c-design__next {
+        position: absolute;
+        background-image: url("./assets/img/next.svg");
+        display: block;
+        width: 53px;
+        height: 53px;
+        cursor: pointer;
+        bottom: -89px;
+        right: 0;
+    }
+
+    .c-design__slider {
+        max-width: 1440px;  
+    }
+
+    .c-design__slider--slide {
         width: 1440px;
         height: 683px;
     }
+
+    .c-design__content {
+        max-width: 1750px;
+        width: 100%;
+        padding: 0 85px;
+    }
+
+    .c-design__left {
+        width: 60%;
+        padding-left: 15%;
+        margin-top: 2%;
+    }
+
+    .c-design__title {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 4.8rem;
+        line-height: 1;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        color: $title-color;
+    }
+
+    .c-design__hr {
+        display: block;
+        background-color: $text-color;
+        width: 57px;
+        height: 0.25px;
+    }
+
+    .c-design__subtitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 400;
+        font-size: 2.7rem;
+        line-height: 1.7;
+        color: $text-color;
+        letter-spacing: 0;
+    }
+
+    .c-design__desc {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 300;
+        font-size: 1.9rem;
+        line-height: 1.7;
+        color: $text-color;
+        letter-spacing: 0;
+    }
+
+    .c-design__right {
+        width: 40%;
+        margin-top: 8%;
+    }
+
 }

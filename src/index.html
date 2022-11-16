@@ -7,6 +7,7 @@
   <!-- @content -->
   <main class="p-top">
     <div class="l-container">
+      <!-- Start section case-->
       <section class="c-case">
         <h2 class="c-case__title">
           家づくりの、こんな<span class="c-case__title c-case__titleedit">不安やお悩みないですか？</span>
@@ -38,6 +39,8 @@
           </div>
         </div>
       </section>
+      <!-- End section case-->
+      <!-- Start section model-->
       <section class="c-model">
         <h2 class="c-model__subtitle">
           はじめての家づくりが具体的に進む、ご来店の<span class="c-model__subtitle c-model__subblue">3&nbsp;つのメリット</span>
@@ -85,6 +88,8 @@
           </div>
         </div>
       </section>
+      <!-- End section model-->
+      <!-- Start section house-->
       <section class="c-house">
         <div class="c-house__content">
           <h2 class="c-house__title">
@@ -107,13 +112,35 @@
           <img src="./assets/img/voucher.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント">
         </a>
       </section>
-      <div class="c-slider">
-        <% if (typeof slider != 'undefined') { %>
-          <% slider.main && slider.main.forEach(slide => { %>
-            <img class="c-slider__slide" src="<%= slide.url %>" alt="<%= slide.alt %>">
-          <% }) %>
-        <% } %>
-      </div>      
+      <!-- End section house-->
+      <!-- Start section design-->
+      <section class="c-design">
+        <div class="c-design__slick">
+          <div class="c-design__slider">
+            <% if (typeof slider != 'undefined') { %>
+              <% slider.main && slider.main.forEach(slide => { %>
+                <img class="c-design__slider--slide" src="<%= slide.url %>" alt="<%= slide.alt %>">
+              <% }) %>
+            <% } %>
+          </div>
+        </div> 
+        <div class="c-design__content c-flex">
+          <div class="c-design__left">
+            <h2 class="c-design__title">design</h2>
+            <span class="c-design__hr"></span>
+          <h3 class="c-design__subtitle">シンプルで美しいデザイン、<br>
+            いつまでも・誰にでも愛される空間に。</h3>
+            <p class="c-design__desc">長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br>
+              壁の色を白で統一したシンプルな間取り。<br>
+              余計な装飾は施さず、こだわりの家具やインテリアを<br>
+              あなた色に合わせてコーディネートを楽しめる<br>
+              年齢や性別を意識しない誰にでも愛される空間です。</p>
+          </div>
+          <div class="c-design__right">
+            <iframe width="702" height="390" src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="北欧のように暮らす家" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>     
     </div>
   </main>
   <!-- @@content -->
