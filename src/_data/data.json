@@ -2,8 +2,60 @@
   "linklists": {
     "main": [
       {
-        "title": "COCO MGM Design",
+        "title": "COCO MGM",
         "url": "/"
+      }
+    ]
+  },
+  "houses": {
+    "main": [
+      {
+        "img":"./assets/img/09.jpg",
+        "title": "豊富な+FUNのオプション",
+        "info": "1,100万円の家をベースに、ライフスタイルにあった+FUNのオプションを組み合わせられます。価格が決まった明朗なシステムで、GOOD DESIGN賞を受賞。"
+      },
+      {
+        "img":"./assets/img/10.jpg",
+        "title": "シンプルな四角い外観",
+        "info": "住む方の生活に馴染むよう、シンプルでムダを削ぎ落とした四角い家。凹凸のないレイアウトで、室内も広々した空間を実現。"
+      },
+      {
+        "img":"./assets/img/11.jpg",
+        "title": "ガルバリウム鋼板の外壁・屋根",
+        "info": "外壁・屋根に使われているガルバリウム鋼板は、無骨で美しいZERO-CUBEの外観の特徴。<br>耐久・耐熱性など機能面に優れた、高品質の素材です。"
+      },
+      {
+        "img":"./assets/img/12.jpg",
+        "title": "家族を感じるリビング",
+        "info": "1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。"
+      }
+    ]
+  },
+  "slider":{
+    "main":[
+      {
+        "url":"./assets/img/slick00.jpg",
+        "alt":"Image Design slide 1"
+      },
+      {
+        "url":"./assets/img/slick01.jpg",
+        "alt":"Image Design slide 2"
+      },
+      {
+        "url":"./assets/img/slick02.jpg",
+        "alt":"Image Design slide 3"
+      },
+      {
+        "url":"./assets/img/slick03.jpg",
+        "alt":"Image Design slide 4"
+      },
+      {
+        "url":"./assets/img/slick04.jpg",
+        "alt":"Image Design slide 5"
+      },
+      {
+        "url":"./assets/img/slick05.jpg",
+        "alt":"Image Design slide 6"
       }
     ]
   }

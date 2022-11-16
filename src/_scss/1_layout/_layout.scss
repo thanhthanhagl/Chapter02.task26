@@ -20,12 +20,6 @@ section {
     padding: 50px 0;
 }
 
-.c-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 //-------------------------------------------------------
 .l-container {
     max-width: $base-width;
@@ -37,6 +31,15 @@ section {
 }
 
 //-------------------------------------------------------
+.c-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-row--reverse {
+    flex-direction: row-reverse;
+}
 
 //-----------------section case------------------
 .c-case {
@@ -80,7 +83,7 @@ section {
         margin-left: 27px;
         width: 245px;
         color: #ededed;
-    
+
         &::after {
             content: "case";
             position: absolute;
@@ -92,22 +95,22 @@ section {
             color: #c7c7c7;
         }
     }
-    
+
     .c-case__num--02 {
         margin-left: 14px;
-    
+
         &::after {
             left: 22%;
         }
     }
-    
+
     .c-case__num--03 {
         margin-left: 11px;
-    
+
         &::after {
             left: 21%;
         }
-    }   
+    }
 
 
     .c-case__textbox {
@@ -119,7 +122,7 @@ section {
         border-radius: 10px;
         margin-top: -5px;
 
-        
+
         &:hover {
             opacity: 0.75;
             filter: blur(5px);
@@ -141,7 +144,7 @@ section {
             position: absolute;
             top: -21%;
             left: 29%;
-        }        
+        }
     }
 
     .c-case__text {
@@ -160,7 +163,7 @@ section {
         background-color: #7a89a8;
         border-radius: 18px;
         top: -12px;
-        right: -13px;            
+        right: -13px;
     }
 
     .c-case__label--text {
@@ -193,7 +196,7 @@ section {
 
 .c-model {
     margin: 0 auto;
-    padding: 45px 0;
+    padding: 45px 358px;
 
     .c-model__subtitle {
         text-align: center;
@@ -201,7 +204,7 @@ section {
         font-weight: 400;
         font-family: "Noto Sans JP", sans-serif;
         color: $text-color;
-    }    
+    }
 
     .c-model__subblue {
         color: $text-blue;
@@ -220,4 +223,130 @@ section {
         letter-spacing: 4.7px;
     }
 
+    .c-model__item {
+        padding-top: 95.7px;
+    }
+
+    .c-model__colleft {
+        width: 50%;
+    }
+
+    .c-model__colright {
+        width: 50%;
+    }
+
+    .c-model__heading {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: bold;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        color: $text-color;
+        line-height: 1.7;
+
+        &::after {
+            content: url("./assets/img/icontext.svg");
+        }
+    }
+
+    .c-model__heading--blue {
+        font-size: 3.6rem;
+        letter-spacing: 0;
+        color: $text-blue;
+    }
+
+    .c-model__text {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 2.1rem;
+        color: $text-color;
+        letter-spacing: 0;
+        line-height: 1.7;
+    }
+
+    .c-model__img {
+        width: 530px;
+    }
+
+}
+
+.c-house {
+    margin: 100px auto 0;
+    padding: 0 90px;
+
+    .c-house__content {
+        background-color: #ededed;
+        max-width: 1740px;
+        padding: 0 78.5px 77px;
+    }
+
+    .c-house__title {
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 8.2rem;
+        letter-spacing: 2px;
+        line-height: 1;
+        color: #000;
+        text-align: right;
+        position: relative;
+        top: -55px;
+    }
+
+    .c-house__desc {
+        display: block;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 400;
+        font-size: 3.4rem;
+        letter-spacing: 0;
+        line-height: 1;
+        color: $text-color;
+        text-align: right;
+    }
+
+    .c-house__desc--blue {
+        font-family: "Noto Serif JP", sans-serif;
+        font-size: 4.6rem;
+        letter-spacing: 0;
+        line-height: 2.5;
+        color: $text-blue;
+    }
+
+    .c-house__item {
+        width: 377px;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .c-house__name {
+        font-size: 2.3rem;
+        font-family: "Noto Sans Jp", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.7;
+        color: $text-color;
+        margin: 25px 0 15px;
+    }
+
+    .c-house__info {
+        font-size: 300;
+        font-family: "Noto Sans Jp", sans-serif;
+        font-size: 1.9rem;
+        color: $text-color;
+        letter-spacing: 0;
+        line-height: 1.7;
+    }
+
+    .c-house__voucher {
+        display: block;
+        margin: 119px auto;
+        padding: 0 360px;
+    }
+}
+
+.c-slider {
+    max-width: 1440px;
+
+    .c-slider__slide {
+        width: 1440px;
+        height: 683px;
+    }
 }

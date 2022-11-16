@@ -42,14 +42,78 @@
         <h2 class="c-model__subtitle">
           はじめての家づくりが具体的に進む、ご来店の<span class="c-model__subtitle c-model__subblue">3&nbsp;つのメリット</span>
         </h2>
-        <h3 class="c-model__title">WELCOME TO MODELHOUSE</h3>
+        <p class="c-model__title">WELCOME TO MODELHOUSE</p>
         <div class="c-model__list">
-          <div class="c-model__item">
-            <div class="c-model__colleft"></div>
-            <div class="c-model__colright"></div>
+          <div class="c-model__item c-flex">
+            <div class="c-model__colleft">
+              <img class="c-model__merit" src="./assets/img/iconmerit1.svg" alt="merit 1">
+              <h3 class="c-model__heading">実物を見て触って<span class="c-model__heading c-model__heading--blue">体感</span>できます!</h3>
+              <p class="c-model__text">カタログや資料だけではなく、高気密・高断熱の木
+                の住まいや、家事動線や収納スペースの女性目線で
+                叶った工夫など、実際に見て触ってご体感いただけ
+                ます。 </p>
+            </div>
+            <div class="c-model__colright">
+              <img class="c-model__img" src="./assets/img/merit1.jpg" alt="実物を見て触って体感できます!">
+            </div>
+          </div>
+          <div class="c-model__item c-flex c-row--reverse">
+            <div class="c-model__colleft">
+              <img class="c-model__merit" src="./assets/img/iconmerit2.svg" alt="merit 2">
+              <h3 class="c-model__heading">土地情報<span class="c-model__heading--blue">1000件以上</span>が見放題!</h3>
+              <p class="c-model__text">愛媛県の最新の土地情報から、学区・最寄りの駅な
+                どご希望の条件でお好きな土地をご覧いただけます。
+                さらに、地盤予測や付帯工事費なども含め、建てた
+                後も安心して暮らせる総合的な土地のアドバイスを
+                いたします。</p>
+            </div>
+            <div class="c-model__colright">
+              <img class="c-model__img" src="./assets/img/merit2.jpg" alt="土地情報1000件以上が見放題!">
+            </div>
+          </div>
+          <div class="c-model__item c-flex">
+            <div class="c-model__colleft">
+              <img class="c-model__merit" src="./assets/img/iconmerit3.svg" alt="merit 3">
+              <h3 class="c-model__heading">お客様に合った<span class="c-model__heading--blue">住宅ローン</span>を診断!</h3>
+              <p class="c-model__text">住宅ローンアドバイザーの資格を持ったスタッフが、
+                住宅ローン提携5大金融機関からお客様に合った適
+                正住宅ローンを診断いたします。</p>
+            </div>
+            <div class="c-model__colright">
+              <img class="c-model__img" src="./assets/img/merit3.jpg" alt="お客様に合った住宅ローンを診断!">
+            </div>
           </div>
         </div>
       </section>
+      <section class="c-house">
+        <div class="c-house__content">
+          <h2 class="c-house__title">
+            recommended point
+            <span class="c-house__desc">イベント・見学会の<span class="c-house__desc--blue">見どころ！</span></span>
+          </h2>
+          <div class="c-house__list c-flex">
+            <% if (typeof houses != 'undefined') { %>
+              <% houses.main && houses.main.forEach(house => { %>
+                <div class="c-house__item">                
+                  <img class="c-house__img" src="<%= house.img %>" alt="<%= house.title %>">
+                  <h3 class="c-house__name"><%= house.title %></h3>     
+                  <p class="c-house__info"><%- house.info %></p>           
+                </div>
+              <% }) %>
+            <% } %>
+          </div>
+        </div>
+        <a class="c-house__voucher">
+          <img src="./assets/img/voucher.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント">
+        </a>
+      </section>
+      <div class="c-slider">
+        <% if (typeof slider != 'undefined') { %>
+          <% slider.main && slider.main.forEach(slide => { %>
+            <img class="c-slider__slide" src="<%= slide.url %>" alt="<%= slide.alt %>">
+          <% }) %>
+        <% } %>
+      </div>      
     </div>
   </main>
   <!-- @@content -->
