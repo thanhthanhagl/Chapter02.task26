@@ -47,7 +47,6 @@ section {
 
     .c-case__title {
         margin-top: 19px;
-        font-family: "Noto Sans JP", sans-serif;
         color: $title-color;
         font-size: 3.6rem;
         font-weight: 400;
@@ -202,7 +201,6 @@ section {
         text-align: center;
         font-size: 3.4rem;
         font-weight: 400;
-        font-family: "Noto Sans JP", sans-serif;
         color: $text-color;
     }
 
@@ -210,7 +208,6 @@ section {
         color: $text-blue;
         font-size: 4.6rem;
         font-weight: 400;
-        font-family: "Noto Serif JP", sans-serif;
         margin-left: 10px;
     }
 
@@ -236,7 +233,6 @@ section {
     }
 
     .c-model__heading {
-        font-family: "Noto Sans JP", sans-serif;
         font-weight: bold;
         font-size: 2.8rem;
         letter-spacing: 1px;
@@ -255,7 +251,6 @@ section {
     }
 
     .c-model__text {
-        font-family: "Noto Sans JP", sans-serif;
         font-size: 2.1rem;
         color: $text-color;
         letter-spacing: 0;
@@ -293,7 +288,6 @@ section {
 
     .c-house__desc {
         display: block;
-        font-family: "Noto Sans JP", sans-serif;
         font-weight: 400;
         font-size: 3.4rem;
         letter-spacing: 0;
@@ -303,7 +297,6 @@ section {
     }
 
     .c-house__desc--blue {
-        font-family: "Noto Serif JP", sans-serif;
         font-size: 4.6rem;
         letter-spacing: 0;
         line-height: 2.5;
@@ -318,7 +311,6 @@ section {
 
     .c-house__name {
         font-size: 2.3rem;
-        font-family: "Noto Sans Jp", sans-serif;
         font-weight: 400;
         letter-spacing: 0;
         line-height: 1.7;
@@ -382,12 +374,12 @@ section {
     }
 
     .c-design__slider {
-        max-width: 1440px;  
+        max-width: 1440px;
     }
 
     .c-design__slider--slide {
-        width: 1440px;
-        height: 683px;
+        max-width: 1440px;
+        max-height: 683px;
     }
 
     .c-design__content {
@@ -402,16 +394,6 @@ section {
         margin-top: 2%;
     }
 
-    .c-design__title {
-        font-family: "Oswald", sans-serif;
-        font-weight: 300;
-        font-size: 4.8rem;
-        line-height: 1;
-        letter-spacing: 1.4px;
-        text-transform: uppercase;
-        color: $title-color;
-    }
-
     .c-design__hr {
         display: block;
         background-color: $text-color;
@@ -420,7 +402,6 @@ section {
     }
 
     .c-design__subtitle {
-        font-family: "Noto Sans JP", sans-serif;
         font-weight: 400;
         font-size: 2.7rem;
         line-height: 1.7;
@@ -429,7 +410,6 @@ section {
     }
 
     .c-design__desc {
-        font-family: "Noto Sans JP", sans-serif;
         font-weight: 300;
         font-size: 1.9rem;
         line-height: 1.7;
@@ -442,4 +422,378 @@ section {
         margin-top: 8%;
     }
 
+}
+
+.c-plan {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .c-plan__title {
+        text-align: center;
+    }
+
+    .c-plan__col {
+        width: 50%;
+        position: relative;
+    }
+
+    .c-plan__item--svg {
+        width: 44px;
+        margin-left: 46%;
+    }
+
+    .c-plan__detail {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 61px;
+        display: flex;
+    }
+
+    .c-plan__detail--item {
+        width: 33%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.2rem;
+        line-height: 1.7;
+        letter-spacing: 0;
+    }
+
+    .c-plan__tr {
+        padding: 31px 0 12px 10px;
+        border-bottom: 1px solid #cbcbcb;
+        font-family: $main-fonts;
+        font-weight: 300;
+    }
+
+    .c-plan__th {
+        width: 20%;
+        font-size: 2.5rem;
+        letter-spacing: 0;
+        line-height: 1.7;
+    }
+
+    .c-plan__td {
+        width: 80%;
+        font-size: 2.5rem;
+        letter-spacing: 0;
+        line-height: 1.7;
+    }
+
+    .c-plan__tag {
+        font-size: 2rem;
+        line-height: 1.5;
+        letter-spacing: 0;
+        display: inline-block;
+        padding: 3px 13px 7px;
+        border: 1px solid #cbcbcb;
+        border-radius: 4px;
+        margin-right: 20px;
+    }
+}
+
+.c-finance {
+    padding: 94px 323px 109px;
+    margin: 0 auto;
+    background-color: #ededed;
+
+    .c-finance__title {
+        text-align: center;
+    }
+
+    .c-finance__subtitle {
+        display: block;
+        margin: 85px auto 46px;
+        background-color: $text-color;
+        color: #fff;
+        font-size: 3rem;
+        letter-spacing: 0;
+        line-height: 1.7;
+        padding: 10px 60px 15px;
+        text-align: center;
+        width: 409px;  
+    }
+
+    .c-finance__col {
+        position: relative;
+        width: 604.5px;
+        background-color: #fff;
+        padding: 75px 80px 42px 90px;
+
+        &:last-child {
+            &::after {
+                content: url("assets/img/iconpayment.svg");
+                width: 206px;
+                position: absolute;
+                z-index: 1;
+                top: -3%;
+                right: -10%;
+
+            }
+        }
+    }
+
+    .c-finance__listing {
+        font-weight: 400;
+        font-size: 2.2rem;
+        letter-spacing: 0;
+        line-height: 1;
+        margin-bottom: 58px;
+    }
+
+    .c-finance__text {
+        font-weight: bold;
+        font-size: 2.6rem;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+
+    .c-finance__number {
+        color: #7a89a8;
+        font-weight: bold;
+        font-size: 9rem;
+        letter-spacing: 0;
+        line-height: 1.7;
+    }
+
+    .c-finance__unit {
+        font-size: 3.6rem;
+    }
+
+    .c-finance__textnote {
+        font-size: 2.2rem;
+        color: $text-color;
+        letter-spacing: 0;
+        line-height: 1.7;
+        font-weight: 400;
+    }
+}
+
+.c-web {
+    margin: 0 auto;
+    padding: 80px 118px;
+
+    .c-web__title {
+        text-align: center;
+    }
+
+    .c-web__title--black {
+        font-weight: 400;
+        font-size: 3.4rem;
+        letter-spacing: 0;
+        line-height: 2;
+        color: $text-color;
+    }
+
+    .c-web__title--blue {
+        font-family: "Noto Serif JP", sans-serif;
+        font-weight: 400;
+        font-size: 4.6rem;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: $text-blue;
+    }
+
+    .c-web__subtitle {
+        color: $text-color;
+        font-weight: 300;
+        font-size: 2.7rem;
+        letter-spacing: 0;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .c-web__step {
+        width: 286px;
+        padding: 50px 23px;
+        position: relative;
+        color: #fff;
+
+        &:nth-child(1) {
+            background-color: $text-color;
+        }
+
+        &:nth-child(n+2) {
+            background-color: #565f64;
+        }
+
+        &:nth-child(5) {
+            background-color: #7a89a8;
+        }
+    }
+
+    .c-web__step--icon {
+        width: 40px;
+        margin: 0 40%;
+    }
+
+    .c-web__step--step {
+        text-align: center;
+        font-family: $main-fonts;
+        font-weight: 400;
+        font-size: 2.1rem;
+        letter-spacing: 0;
+        line-height: 1.7;
+    }
+
+    .c-web__step--desc {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0;
+        line-height: 1.7;
+        border-top: 0.5px solid #fff;
+    }
+
+    .c-web__step--svg {
+        width: 8px;
+        position: absolute;
+        top: 50%;
+        right: -12%;
+    }
+
+    .c-web__notify {
+        max-width: 1200px;
+        margin: 125px auto 0;
+        border: 1px solid $text-color;
+    }
+
+    .c-web__top {
+        background-color: $text-color;
+        padding: 50px 90px;
+    }
+
+    .c-web__top--btn {
+        border-radius: 23px;
+        background-color: #fff;
+        color: $text-color;
+        font-family: $main-fonts;
+        font-weight: bold;
+        font-size: 2.3rem;
+        line-height: 1;
+        letter-spacing: 0;
+        padding: 15px 35.5px;
+    }
+
+    .c-web__top--title {
+        font-weight: 300;
+        font-size: 3.2rem;
+        letter-spacing: 1.4px;
+        line-height: 1.7;
+        color: #fff;
+    }
+
+    .c-web__top--desc {
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 1;
+        color: #fff;
+    }
+
+    .c-web__table {
+        padding: 29px;
+    }
+
+    .c-web__table--td {
+        width: 228px;
+        border-right: 1px solid #aeaeae;
+
+        &:nth-child(-n+5) {
+            border-bottom: 1px solid #aeaeae;
+        }
+
+        &:nth-child(5),
+        &:nth-child(10) {
+            border-right: 0;
+        }
+    }
+
+    .c-web__item--img {
+        width: 50%;
+        margin: 20px 57px 15px;
+    }
+
+    .c-web__item--text {
+        text-align: center;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+}
+
+.c-contact {
+    .c-contact__content {
+        margin-bottom: 92px;
+    }
+
+    .c-contact__map {
+        width: 50%;
+    }
+
+    .c-contact__info {
+        width: 50%;
+        background-color: #ededed;
+        padding: 130px 180px 125px;
+    }
+
+    .c-contact__title {
+        text-align: center;
+        color: #000;
+        font-family: "Oswald", sans-serif;
+        font-size: 4.8rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .c-contact__hr {
+        display: block;
+        background-color: #000;
+        width: 74px;
+        height: 1px;
+        margin: 15px auto 30px;
+
+    }
+
+    .c-contact__desc {
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.8rem;
+        letter-spacing: 0;
+        line-height: 1;
+    }
+
+    .c-contact__table {
+        margin-top: 85px;
+        max-width: 500px;
+    }
+
+    .c-contact__tr {
+        margin-bottom: 12px;
+    }
+
+    .c-contact__th {
+        width: 24%;        
+    }
+
+    .c-contact__th--text {
+        background-color: #565f64;
+        color: #fff;
+        font-size: 2.5rem;
+        letter-spacing: 0;
+        line-height: 1;
+        font-weight: 400;
+        text-align: center;
+        padding: 8px 0;
+        display: block;
+    }
+
+    .c-contact__td {
+        width: 70%;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
 }

@@ -2,18 +2,6 @@
 /*------------------------------------------------------------
     Reset
 ------------------------------------------------------------*/
-@font-face {
-    font-family: Noto-Sans-JP;
-    src: url("./assets/font/NotoSansJP.otf");
-}
-@font-face {
-    font-family: Noto-Serif-JP;
-    src: url("./assets/font/NotoSerifJP.otf");
-}
-@font-face {
-    font-family: Oswald;
-    src: url("./assets/font/Oswald.otf");
-}
 
 html,
 body,
@@ -177,8 +165,9 @@ a {
 
 a:hover,
 a:hover img {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    cursor: pointer;
 }
 
 img {
