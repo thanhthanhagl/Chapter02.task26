@@ -1,0 +1,218 @@
+[33mcommit 4be667a1b3ab20f22ed6ae7fb3786c010e58a980[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: thanhthanhagl <diepthanhthanh.agl@gmail.com>
+Date:   Tue Nov 15 11:46:17 2022 +0700
+
+    first commit
+
+[33mcommit a0ab6e42244e9fe7639bc2754a15486fb26109d8[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nguyen Tu Dong <tu_dong@allgrow-labo.jp>
+Date:   Thu Oct 20 14:35:10 2022 +0700
+
+    fix: -webkit issue
+
+[33mcommit 5a81ed53d15c273851ed650cfbda39b0f4348450[m[33m ([m[1;33mtag: v1.1.0[m[33m)[m
+Merge: e5e2065 666c6e1
+Author: Nguyen Tu Dong <73626389+TuDongNguyen@users.noreply.github.com>
+Date:   Wed Jun 1 11:03:29 2022 +0700
+
+    Merge pull request #6 from allgrow-labo/feature/stylelint
+    
+    Feature/stylelint
+
+[33mcommit 666c6e1bc5aca84b1a6dfb27fd78e8d4825b2d4b[m[33m ([m[1;31morigin/feature/stylelint[m[33m)[m
+Author: Nguyen Tu Dong <tu_dong@allgrow-labo.jp>
+Date:   Tue May 31 13:34:58 2022 +0700
+
+    Add commands
+
+[33mcommit 04a6b9e960d4f1f335bb315d1b76684c16a79691[m
+Author: Nguyen Tu Dong <tu_dong@allgrow-labo.jp>
+Date:   Mon May 30 09:22:58 2022 +0700
+
+    Support Node version 12
+
+[33mcommit 066a1db8dcc59780d5a769ac283989f85e3c0eeb[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Sun May 29 22:13:11 2022 +0700
+
+    Refactor
+
+[33mcommit 9e8c064400e1403ac9b90e78385a45c625bf95c1[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Sat May 28 18:12:59 2022 +0700
+
+    Add ESLint
+
+[33mcommit 67c04bafea79d669ae73201dacb748f7fff8222d[m
+Author: Nguyen Tu Dong <tu_dong@allgrow-labo.jp>
+Date:   Fri May 27 16:36:29 2022 +0700
+
+    Add Stylelint, HTMLHint
+
+[33mcommit e5e206514c139b24b337979b1a6025c7655407c0[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Thu May 5 17:23:26 2022 +0700
+
+    Fix link active
+
+[33mcommit d28f7f38d5589dbc71d27928c4d595ef3aa3b545[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Thu May 5 16:41:25 2022 +0700
+
+    Fix link active
+
+[33mcommit 802842d964c120dc5437fd2aa74f929dce138f45[m[33m ([m[1;33mtag: v1.0.2[m[33m)[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Tue Apr 5 17:31:44 2022 +0700
+
+    Support external link
+
+[33mcommit 50dadfb4911d8005249f0ae37ec5fe2f926a3f3c[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Apr 4 18:47:42 2022 +0700
+
+    Support external link
+
+[33mcommit 461dde31ddf1c388284fbcf0e257ea5f5ad12c09[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Apr 4 14:06:08 2022 +0700
+
+    Change mixin breakpoint
+
+[33mcommit 7aa5d78873bfef9cdeab512d4994e7ac592454d8[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Apr 4 14:02:31 2022 +0700
+
+    Move css to assets folder
+
+[33mcommit 1dc944a125f0681067e5a5673c8bcbd9bc6d0fb2[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Apr 4 09:23:15 2022 +0700
+
+    Fix menu issue
+
+[33mcommit 5a59ae1e16f969ad9d51b6eb271065419a25dd5c[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Fri Apr 1 17:00:01 2022 +0700
+
+    New Update
+
+[33mcommit 01347604036231684bff580f2a0b1e37b4339741[m[33m ([m[1;33mtag: v1.0.1[m[33m)[m
+Merge: b57f41b 9454000
+Author: Nguyen Tu Dong <73626389+TuDongNguyen@users.noreply.github.com>
+Date:   Tue Mar 15 11:03:08 2022 +0700
+
+    Merge pull request #5 from allgrow-labo/fix/html
+    
+    feat: update README.md
+
+[33mcommit 945400055c97b6da64d81b58fbdbdedd34a5bfb9[m[33m ([m[1;31morigin/fix/html[m[33m)[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Tue Mar 15 11:00:01 2022 +0700
+
+    feat: update README.md
+
+[33mcommit b57f41b1bae2e493034a527faaa726f1ee75e0a2[m
+Merge: 533a5cd 538da46
+Author: Nguyen Tu Dong <73626389+TuDongNguyen@users.noreply.github.com>
+Date:   Fri Mar 4 08:31:14 2022 +0700
+
+    Merge pull request #4 from allgrow-labo/fix/html
+    
+    fix: remove script in head tag
+
+[33mcommit 538da467230d689a2fd1cd1d43fa1e25fa2d6677[m
+Author: NguyenTuDong <tu_dong@allgrow-labo.jp>
+Date:   Thu Mar 3 19:55:24 2022 +0700
+
+    fix: remove script in head tag
+
+[33mcommit 533a5cd259ba11488fd1083562dc4049a734d9e9[m[33m ([m[1;33mtag: v1.0.0[m[33m)[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Tue Feb 22 17:09:31 2022 +0700
+
+    fix: commit
+
+[33mcommit cf2ae9abb074cf7cdc56f919ad7f363673cac726[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Tue Feb 22 17:07:08 2022 +0700
+
+    refactor: update package.json
+
+[33mcommit 540b247c8e5baf67d72242aff5b45400f30bb55f[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Tue Feb 22 16:19:30 2022 +0700
+
+    docs: create README.md
+
+[33mcommit 6fd09375a417a527afc934e3b320f74bdb73f807[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Tue Feb 22 13:36:50 2022 +0700
+
+    refactor: change value name on header.ejs
+
+[33mcommit 270322c5f0bb96e8618a0a2ec7cddfa0c89cd197[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Tue Feb 22 12:03:49 2022 +0700
+
+    feat: convert env values to global values
+
+[33mcommit 4bc42abd7dd535e66ccc043f8360a372240e6bea[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Tue Feb 22 11:40:52 2022 +0700
+
+    fix: blocks for EJS
+
+[33mcommit 082838e48eddae9d556ce164e2c40403c3c664bb[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Feb 21 15:23:13 2022 +0700
+
+    feat: base changes between environments
+
+[33mcommit 395cbe272b8fca79b6ec5a349b669a1b5c821c18[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Feb 21 10:55:44 2022 +0700
+
+    refactor: watch.js -> watcher.js
+
+[33mcommit 43e8c86bcd21946c147dd3ae5dd84a2da4462461[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Feb 21 10:46:30 2022 +0700
+
+    feat: imagemin (close #3)
+
+[33mcommit af6507103d163a7c634d243d01e0830878964f71[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Fri Feb 18 17:27:44 2022 +0700
+
+    feat: imagemin
+
+[33mcommit fd979fea49cae0b321ce4cb128f5841795e483b4[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Fri Feb 18 11:22:13 2022 +0700
+
+    fix #2
+
+[33mcommit c308229bc408b7d58b17ed1c1a926a29d773adbc[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Feb 14 16:13:37 2022 +0700
+
+    feat: update watch
+
+[33mcommit c8df45ba32f33ac12049ef2d4c48075e5c467207[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Mon Feb 14 08:05:40 2022 +0700
+
+    fix: url
+
+[33mcommit 1120ab2d40265f0dc318186b62c36154ee93e26f[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Fri Feb 11 17:24:12 2022 +0700
+
+    feat: create layout
+
+[33mcommit a1e222b2f5b3e81fc745eda32cf05a5cd27e2adc[m
+Author: TuDongNguyen <tu_dong@allgrow-labo.jp>
+Date:   Fri Feb 11 10:56:31 2022 +0700
+
+    first commit
