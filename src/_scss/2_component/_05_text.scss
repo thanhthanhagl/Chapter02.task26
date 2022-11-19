@@ -4,4 +4,29 @@ text
 
 /*
 ------------------------------------------------------------*/
+.c-web {
+    .c-web__heading--letter {
+        margin-top: 30px;
+        transform: translateX(2px);
+    }
 
+    .c-web__heading--people {
+        margin-top: 22px;
+        transform: translateX(2px);
+    }
+
+    .c-web__heading--note {
+        margin-top: 25px;
+        transform: translateX(1px);
+    }
+
+    .c-web__heading--document {
+        margin-top: 28px;
+        transform: translateX(1px);
+    }
+
+    .c-web__heading--gift {
+        margin-top: 25px;
+        transform: translateX(2px);
+    }
+}

@@ -55,9 +55,9 @@ section {
         line-height: 2;
     }
 
-    .c-case__titleedit {
-        margin-left: 8px;
-    }
+    // .c-case__titleedit {
+    //     margin-left: 8px;
+    // }
 
     .c-case__row {
         position: relative;
@@ -120,19 +120,6 @@ section {
         padding: 44px 0;
         border-radius: 10px;
         margin-top: -3px;
-
-
-        &:hover {
-            opacity: 0.75;
-            filter: blur(5px);
-            box-shadow: 7px 7px #68696c;
-        }
-
-        &:focus {
-            opacity: 0.75;
-            filter: blur(5px);
-            box-shadow: 7px 7px #68696c;
-        }
 
         &::before {
             content: "";
@@ -350,7 +337,7 @@ section {
     .c-house__icon {
         width: 462px;
         position: absolute;
-        top: -23%;
+        top: -22%;
         left: 11.8%;
         z-index: 1;
     }
@@ -366,7 +353,7 @@ section {
         text-align: right;
         position: relative;
         top: -62px;
-        left: 30px;
+        left: 32px;
     }
 
     .c-house__desc {
@@ -424,7 +411,7 @@ section {
     .c-house__voucher {
         display: block;
         margin: 0 auto;
-        padding: 119px 270px 0;
+        margin: 120px 270px 0;
     }
 }
 
@@ -440,10 +427,10 @@ section {
         &::after {
             content: "";
             position: absolute;
-            width: 83.6%;
+            max-width: 1204px;
             height: 527px;
             top: 83.5%;
-            left: 49.5%;
+            left: 49.6%;
             z-index: -1;
             background-color: #ededed;
         }
@@ -496,13 +483,13 @@ section {
         background-color: $text-color;
         width: 57px;
         height: 1px;
-        margin: 37px 0 27px;
+        margin: 37px 0 25px;
     }
 
     .c-design__subtitle {
         font-weight: 400;
         font-size: 2.7rem;
-        line-height: 1.3;
+        line-height: 1.4;
         color: $text-color;
         letter-spacing: 0;
         padding-left: 1px;
@@ -514,12 +501,13 @@ section {
         line-height: 1.8;
         color: $text-color;
         letter-spacing: 0;
-        margin-top: 38px;
+        margin-top: 35px;
     }
 
     .c-design__right {
-        width: 40%;
-        margin: 12.2% -6.4% 0 0;
+        max-width: 44.5%;
+        width: 100%;
+        margin: 12.3% -11% 0 0;
     }
 
 }
@@ -556,7 +544,7 @@ section {
     }
 
     .c-plan__detail {
-        width: 1200px;
+        max-width: 1200px;
         margin: 50px auto 0;
         padding: 0 70px;
         display: flex;
@@ -670,7 +658,7 @@ section {
         line-height: 1;
         letter-spacing: 0;
         display: inline-block;
-        padding: 9px 16px;
+        padding: 6px 16px 9px;
         border: 1px solid #cbcbcb;
         border-radius: 4px;
         margin-right: 15px;
@@ -696,7 +684,7 @@ section {
 }
 
 .c-finance {
-    padding: 106px 323px 109px;
+    padding: 106px 323px 110px;
     margin: 0 auto;
     background-color: #ededed;
 
@@ -737,9 +725,9 @@ section {
 
     .c-finance__col {
         position: relative;
-        width: 604.5px;
+        width: 605px;
         background-color: #fff;
-        padding: 6.2% 7% 3.5%;
+        padding: 6.1% 7% 3.5%;
 
         &:last-child {
             &::after {
@@ -747,8 +735,8 @@ section {
                 width: 206px;
                 position: absolute;
                 z-index: 1;
-                top: -3%;
-                right: -10%;
+                top: -4%;
+                right: -7.5%;
 
             }
         }
@@ -759,7 +747,11 @@ section {
         font-size: 2.2rem;
         letter-spacing: 0;
         line-height: 1;
-        margin-bottom: 56px;
+        margin-bottom: 55px;
+    }
+
+    .c-finance__listing--edit {
+        margin-right: 6px;
     }
 
     .c-finance__text {
@@ -767,6 +759,7 @@ section {
         font-size: 2.6rem;
         line-height: 1;
         letter-spacing: 0;
+        margin: 31px 0 0 5px;
     }
 
     .c-finance__number {
@@ -774,7 +767,8 @@ section {
         font-weight: bold;
         font-size: 9rem;
         letter-spacing: 0;
-        line-height: 1.7;
+        line-height: 1.6;
+        
     }
 
     .c-finance__unit {
@@ -787,15 +781,18 @@ section {
         letter-spacing: 0;
         line-height: 1.7;
         font-weight: 400;
+        margin-top: 11px;
     }
 }
 
 .c-web {
-    margin: 0 auto;
-    padding: 80px 118px;
+    margin: 53px auto;
+    padding: 0 118px;
 
     .c-web__title {
         text-align: center;
+        margin-top: 2px;
+        margin-bottom: 13px;
     }
 
     .c-web__title--black {
@@ -810,7 +807,7 @@ section {
         font-family: "Noto Serif JP", sans-serif;
         font-weight: 400;
         font-size: 4.6rem;
-        letter-spacing: 2px;
+        letter-spacing: 11.5px;
         line-height: 2;
         color: $text-blue;
     }
@@ -820,13 +817,26 @@ section {
         font-weight: 300;
         font-size: 2.7rem;
         letter-spacing: 0;
-        line-height: 1.5;
+        line-height: 1.4;
         text-align: center;
+        transform: translateX(1px);
+    }
+
+    .c-web__subtitle--ok {
+        margin-left: 7px;
+    }
+
+    .c-web__subtitle--bottom {
+        transform: translateX(7px);
+    }
+
+    .c-web__progress {
+        margin-top: 75px;
     }
 
     .c-web__step {
         width: 286px;
-        padding: 50px 23px;
+        padding: 50px 23px 48px;
         position: relative;
         color: #fff;
 
@@ -844,8 +854,8 @@ section {
     }
 
     .c-web__step--icon {
-        width: 40px;
-        margin: 0 40%;
+        margin: 0 auto;
+        display: block;
     }
 
     .c-web__step--step {
@@ -863,25 +873,34 @@ section {
         font-size: 1.6rem;
         letter-spacing: 0;
         line-height: 1.7;
-        border-top: 0.5px solid #fff;
+        border-top: 1px solid #fff;
+        margin-top: 9px;
+        padding-top: 13px;
     }
 
     .c-web__step--svg {
         width: 8px;
         position: absolute;
-        top: 50%;
-        right: -12%;
+        top: 48%;
+        right: -12.5%;
     }
 
     .c-web__notify {
         max-width: 1200px;
-        margin: 125px auto 0;
+        margin: 122px auto 0;
         border: 1px solid $text-color;
     }
 
     .c-web__top {
         background-color: $text-color;
-        padding: 50px 90px;
+        padding: 50px 0 54px;
+    }
+
+    .c-web__top--heading {
+        margin-left: 90px;
+        margin-top: 11px;
+        display: flex;
+        column-gap: 53px;
     }
 
     .c-web__top--btn {
@@ -893,23 +912,31 @@ section {
         font-size: 2.3rem;
         line-height: 1;
         letter-spacing: 0;
-        padding: 15px 35.5px;
+        padding: 14px 27px;
     }
 
     .c-web__top--title {
         font-weight: 300;
         font-size: 3.2rem;
-        letter-spacing: 1.4px;
+        letter-spacing: 2px;
         line-height: 1.7;
         color: #fff;
+        transform: translate(0, -5px);
+    }
+
+    .c-web__top--titleedit {
+        margin-left: -5px;
+        margin-right: 4px;
     }
 
     .c-web__top--desc {
         font-weight: 300;
         font-size: 2rem;
-        letter-spacing: 0;
+        letter-spacing: -1.1px;
         line-height: 1;
         color: #fff;
+        margin-left: 97px;
+        margin-top: 25px;
     }
 
     .c-web__table {

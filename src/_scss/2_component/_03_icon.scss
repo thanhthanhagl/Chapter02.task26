@@ -4,3 +4,29 @@ icon
 
 /*
 ------------------------------------------------------------*/
+.c-web {
+    .c-web__icon--letter {
+        width: 41px;
+        transform: translate(2px, 6px);
+    }
+
+    .c-web__icon--people {
+        width: 36px;
+        transform: translate(2px, -3px);
+    }
+
+    .c-web__icon--note {
+        width: 33px;
+        transform: translate(2px, 4px);
+    }
+
+    .c-web__icon--document {
+        width: 35px;
+        transform: translate(2px, 6px);
+    }
+
+    .c-web__icon--gift { 
+        width: 38px;
+        transform: translate(2px, 2px);
+    }
+}
