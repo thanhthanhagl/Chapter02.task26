@@ -13,7 +13,6 @@ body {
 
 //-------------------------------------------------------
 main {
-    // padding: 0px 0 100px;
 }
 
 section {
@@ -26,7 +25,7 @@ section {
     margin: 0 auto;
 
     @include sp {
-        width: 375px;
+        max-width: 375px;
     }
 }
 
@@ -44,9 +43,6 @@ section {
 //-----------------section case------------------
 .c-case {
     padding: 50px 40px;
-    @include sp {
-        padding: 0;
-    }
 
     .c-case__title {
         margin-top: 19px;
@@ -56,9 +52,10 @@ section {
         text-align: center;
         letter-spacing: 0;
         line-height: 2;
-        @include sp {
-            font-size: 3rem;
-        }
+    }
+
+    .c-case__titleedit {
+        margin-left: 8px;
     }
 
     .c-case__row {
@@ -68,19 +65,11 @@ section {
         min-width: 375px;
         margin: auto;
         padding: 15px 0;
-        @include sp {
-            max-width: 325px;
-            width: 100%;
-            padding: 0 25px;
-        }
     }
 
     .c-case__col {
         width: 470px;
         position: relative;
-        @include sp {
-            width: 100%;
-        }
     }
 
     .c-case__num {
@@ -103,13 +92,6 @@ section {
             left: 23%;
             color: #c7c7c7;
         }
-        @include sp {
-            font-size: 14.8rem;
-
-            &::after {
-                font-size: 1.7rem;
-            }
-        }        
     }
 
     .c-case__num--02 {
@@ -132,11 +114,24 @@ section {
     .c-case__textbox {
         position: relative;
         background-color: $title-color;
-        max-width: 470px;
+        width: 470px;
         height: 126px;
         padding: 44px 0;
         border-radius: 10px;
         margin-top: -3px;
+
+
+        &:hover {
+            opacity: 0.75;
+            filter: blur(5px);
+            box-shadow: 7px 7px #68696c;
+        }
+
+        &:focus {
+            opacity: 0.75;
+            filter: blur(5px);
+            box-shadow: 7px 7px #68696c;
+        }
 
         &::before {
             content: "";
@@ -230,11 +225,6 @@ section {
         margin: 38px auto 0;
         max-width: 1200px;
         width: 100%;
-        @include sp {
-            max-width: 375px;
-            width: 100%;
-            margin: 0 auto;
-        }
     }
 
     .c-model__item {
@@ -244,34 +234,21 @@ section {
     .c-model__colleft {
         width: 42%;
         margin-left: 95px;
-        @include sp {
-            width: 80%;
-            margin: 0 auto;
-        }
     }
 
     .c-model__colright {
         width: 44.5%;
-        @include sp {
-            width: 100%;
-        }
     }
 
     .c-model__merit {
         margin-left: -81px;
-        margin-top: -3px;
-        @include sp {
-            margin-left: 0;
-        }   
+        margin-top: -3px;        
     }
 
     .c-model__item:nth-child(2) {
         .c-model__merit {
             margin-left: -54px;
             margin-top: -3px;
-            @include sp {
-                margin-left: 0;
-            }
         }
 
         .c-model__heading {
@@ -361,27 +338,18 @@ section {
 .c-house {
     margin: 0 auto;
     padding: 50px 90px 0;
-    @include sp {
-        padding: 50px 0 0;
-    }
 
     .c-house__content {
         background-color: #ededed;
         max-width: 1740px;
         padding: 0 78.5px 77px;
         position: relative;
-        @include sp {
-            max-width: 375px;
-            margin: 0 auto;
-            width: 100%;
-            padding: 0 10px;
-        }
     }
 
     .c-house__icon {
         width: 462px;
         position: absolute;
-        top: -22%;
+        top: -23%;
         left: 11.8%;
         z-index: 1;
     }
@@ -397,10 +365,7 @@ section {
         text-align: right;
         position: relative;
         top: -62px;
-        left: 32px;
-        @include sp {
-            font-size: 3rem;
-        }
+        left: 30px;
     }
 
     .c-house__desc {
@@ -431,9 +396,6 @@ section {
         width: 377px;
         background-color: #fff;
         padding: 23px 20px 45px;
-        @include tab {
-            width: 48.4%;
-        }
     }
 
     .c-house__img {
@@ -461,7 +423,7 @@ section {
     .c-house__voucher {
         display: block;
         margin: 0 auto;
-        margin: 120px 270px 0;
+        padding: 119px 270px 0;
     }
 }
 
@@ -477,19 +439,12 @@ section {
         &::after {
             content: "";
             position: absolute;
-            max-width: 1204px;
-            width: 100%;
+            width: 83.6%;
             height: 527px;
             top: 83.5%;
-            left: 49.6%;
+            left: 49.5%;
             z-index: -1;
             background-color: #ededed;
-            @include sp {
-                width: 52%;
-                left: 48%;
-                height: 257px;
-                top: 40%;
-            }
         }
     }
 
@@ -540,13 +495,13 @@ section {
         background-color: $text-color;
         width: 57px;
         height: 1px;
-        margin: 37px 0 25px;
+        margin: 37px 0 27px;
     }
 
     .c-design__subtitle {
         font-weight: 400;
         font-size: 2.7rem;
-        line-height: 1.4;
+        line-height: 1.3;
         color: $text-color;
         letter-spacing: 0;
         padding-left: 1px;
@@ -558,13 +513,12 @@ section {
         line-height: 1.8;
         color: $text-color;
         letter-spacing: 0;
-        margin-top: 35px;
+        margin-top: 38px;
     }
 
     .c-design__right {
-        max-width: 44.5%;
-        width: 100%;
-        margin: 12.3% -11% 0 0;
+        width: 40%;
+        margin: 12.2% -6.4% 0 0;
     }
 
 }
@@ -601,7 +555,7 @@ section {
     }
 
     .c-plan__detail {
-        max-width: 1200px;
+        width: 1200px;
         margin: 50px auto 0;
         padding: 0 70px;
         display: flex;
@@ -715,7 +669,7 @@ section {
         line-height: 1;
         letter-spacing: 0;
         display: inline-block;
-        padding: 6px 16px 9px;
+        padding: 9px 16px;
         border: 1px solid #cbcbcb;
         border-radius: 4px;
         margin-right: 15px;
@@ -741,12 +695,9 @@ section {
 }
 
 .c-finance {
-    padding: 106px 323px 60px;
+    padding: 106px 323px 109px;
     margin: 0 auto;
     background-color: #ededed;
-    @include tab {
-        padding: 0;
-    }
 
     .c-finance__title {
         text-align: center;
@@ -771,10 +722,7 @@ section {
         line-height: 1;
         padding: 14px 60px 21px;
         text-align: center;
-        width: 410px;
-        @include sp {
-            width: 375px;
-        }
+        width: 410px;  
     }
 
     .c-finance__subtitle--edit {
@@ -788,10 +736,9 @@ section {
 
     .c-finance__col {
         position: relative;
-        width: 605px;
+        width: 604.5px;
         background-color: #fff;
-        padding: 6.1% 7% 3.5%;
-        margin-bottom: 50px;
+        padding: 6.2% 7% 3.5%;
 
         &:last-child {
             &::after {
@@ -799,11 +746,9 @@ section {
                 width: 206px;
                 position: absolute;
                 z-index: 1;
-                top: -4%;
-                right: -7.5%;
-                @include sp {
-                    right: 0;
-                }
+                top: -3%;
+                right: -10%;
+
             }
         }
     }
@@ -813,11 +758,7 @@ section {
         font-size: 2.2rem;
         letter-spacing: 0;
         line-height: 1;
-        margin-bottom: 55px;
-    }
-
-    .c-finance__listing--edit {
-        margin-right: 6px;
+        margin-bottom: 56px;
     }
 
     .c-finance__text {
@@ -825,7 +766,8 @@ section {
         font-size: 2.6rem;
         line-height: 1;
         letter-spacing: 0;
-        margin: 31px 0 0 5px;
+        margin-top: 31px;
+        margin-left: 5px;
     }
 
     .c-finance__number {
@@ -834,7 +776,7 @@ section {
         font-size: 9rem;
         letter-spacing: 0;
         line-height: 1.6;
-        
+        transform: translate(-2px, 0);
     }
 
     .c-finance__unit {
@@ -847,18 +789,15 @@ section {
         letter-spacing: 0;
         line-height: 1.7;
         font-weight: 400;
-        margin-top: 11px;
     }
 }
 
 .c-web {
-    margin: 53px auto 55px;
-    padding: 0 10px;
+    margin: 0 auto;
+    padding: 80px 118px;
 
     .c-web__title {
         text-align: center;
-        margin-top: 2px;
-        margin-bottom: 13px;
     }
 
     .c-web__title--black {
@@ -873,7 +812,7 @@ section {
         font-family: "Noto Serif JP", sans-serif;
         font-weight: 400;
         font-size: 4.6rem;
-        letter-spacing: 11.5px;
+        letter-spacing: 2px;
         line-height: 2;
         color: $text-blue;
     }
@@ -883,28 +822,13 @@ section {
         font-weight: 300;
         font-size: 2.7rem;
         letter-spacing: 0;
-        line-height: 1.4;
+        line-height: 1.5;
         text-align: center;
-        transform: translate(1px, 2px);
-    }
-
-    .c-web__subtitle--ok {
-        margin-left: 7px;
-    }
-
-    .c-web__subtitle--bottom {
-        transform: translateX(7px);
-    }
-
-    .c-web__progress {
-        margin: 4% auto 6.5%;
-        max-width: 1686px;
-        width: 100%;
     }
 
     .c-web__step {
         width: 286px;
-        padding: 50px 0 48px;
+        padding: 50px 23px;
         position: relative;
         color: #fff;
 
@@ -922,8 +846,8 @@ section {
     }
 
     .c-web__step--icon {
-        margin: 0 auto;
-        display: block;
+        width: 40px;
+        margin: 0 40%;
     }
 
     .c-web__step--step {
@@ -941,40 +865,25 @@ section {
         font-size: 1.6rem;
         letter-spacing: 0;
         line-height: 1.7;
-        border-top: 1px solid #fff;
-        margin: 9px 23px 0;
-        transform: translateX(2px);
-        padding-top: 13px;
+        border-top: 0.5px solid #fff;
     }
 
     .c-web__step--svg {
         width: 8px;
         position: absolute;
-        top: 48%;
-        right: -12.5%;
+        top: 50%;
+        right: -12%;
     }
 
     .c-web__notify {
         max-width: 1200px;
-        margin: 120px auto 0;
-        width: 100%;
+        margin: 125px auto 0;
         border: 1px solid $text-color;
-        @include sp {
-            max-width: 334px;
-            margin: 0 auto;
-        }
     }
 
     .c-web__top {
         background-color: $text-color;
-        padding: 50px 0 42px;
-    }
-
-    .c-web__top--heading {
-        margin-left: 90px;
-        margin-top: 9px;
-        display: flex;
-        column-gap: 53px;
+        padding: 50px 90px;
     }
 
     .c-web__top--btn {
@@ -986,157 +895,74 @@ section {
         font-size: 2.3rem;
         line-height: 1;
         letter-spacing: 0;
-        padding: 14px 27px;
+        padding: 15px 35.5px;
     }
 
     .c-web__top--title {
         font-weight: 300;
         font-size: 3.2rem;
-        letter-spacing: 2px;
+        letter-spacing: 1.4px;
         line-height: 1.7;
         color: #fff;
-        transform: translate(0, -5px);
-    }
-
-    .c-web__top--titleedit {
-        margin-left: -5px;
-        margin-right: 4px;
     }
 
     .c-web__top--desc {
         font-weight: 300;
         font-size: 2rem;
-        letter-spacing: -3px;
-        color: #fff;
-        margin-left: 99px;
-        margin-top: 12px;
-    }
-
-    .c-web__top--descedit {
-        margin-left: 2px;
-        font-weight: 300;
-        font-size: 2rem;
-        letter-spacing: -0.5px;
-        color: #fff;
-        margin-right: -7px;
-    }
-
-    .c-web__top--descedit1 {
-        margin-left: 1px;
-        font-weight: 300;
-        font-size: 2rem;
-        letter-spacing: -0.5px;
-        color: #fff;
-        margin-right: -8px;
-    }
-
-    .c-web__top--descedit2 {
-        margin-left: -1px;
-        font-weight: 300;
-        font-size: 2rem;
-        letter-spacing: -1.4px;
+        letter-spacing: 0;
+        line-height: 1;
         color: #fff;
     }
 
     .c-web__table {
-        padding: 35px 41px 48px;
+        padding: 29px;
         display: flex;
-        @include sp {
-            flex-direction: column;
-        }
-    }
-
-    .c-web__table--group {
-        width: 45%;
-        @include sp {
-            width: 290px;
-        }
-    }
-
-    .c-web__group--col {
-        width: 20%;
-
-        .c-web__table--td {
-            width: 100%;
-            border-right: 0;
-
-            &:first-child {
-                width: 139%;
-                border-bottom: 1px solid #aeaeae;
-                @include sp {
-                    border-bottom: 0 none;
-                    border-right: 1px solid #aeaeae;
-                }
-            }
-        }
-        @include sp {
-            width: 100%;
-            display: flex;
-        }
-    }
-
-    .c-web__group {
-        display: flex;
-
-        &:first-child {
-            border-bottom: 1px solid #aeaeae;
-        }
+        flex-direction: row;
     }
 
     .c-web__table--td {
-        height: 208px;
-        width: 50%;
+        width: 228px;
         border-right: 1px solid #aeaeae;
-    }  
 
+        &:nth-child(-n+5) {
+            border-bottom: 1px solid #aeaeae;
+        }
+
+        &:nth-child(5),
+        &:nth-child(10) {
+            border-right: 0;
+        }
+    }
+
+    .c-web__item--img {
+        width: 50%;
+        margin: 20px 57px 15px;
+    }
+
+    .c-web__item--text {
+        text-align: center;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
 }
 
 .c-contact {
-    padding: 53px 0 26px;
-    margin: 0 auto;
-
     .c-contact__content {
         margin-bottom: 92px;
-        max-height: 700px;
-        height: 100vh;
     }
 
     .c-contact__map {
         width: 50%;
-        position: relative;
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        @include sp {
-            width: 100%;
-            height: 290px;
-        }
     }
 
     .c-contact__info {
         width: 50%;
         background-color: #ededed;
-        padding: 1.5%;
-        @include sp {
-            width: 100%;
-        }
+        padding: 130px 180px 125px;
     }
-
-    .c-contact__info--wrapper {
-        max-width: 600px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center;
-        padding-top: 0.7%;
-    }
-
 
     .c-contact__title {
         text-align: center;
@@ -1144,10 +970,7 @@ section {
         font-family: "Oswald", sans-serif;
         font-size: 4.8rem;
         font-weight: 300;
-        letter-spacing: 5px;
-        margin-bottom: 1.7%;
-        margin-top: 18.5%;
-        padding-right: 9%;
+        letter-spacing: 1px;
     }
 
     .c-contact__hr {
@@ -1155,49 +978,25 @@ section {
         background-color: #000;
         width: 74px;
         height: 1px;
-        margin: 16px auto 34px;
-        transform: translateX(-32px);
+        margin: 15px auto 30px;
 
     }
 
     .c-contact__desc {
         text-align: center;
-        color: #000;
         font-weight: 300;
         font-size: 2.8rem;
-        letter-spacing: -0.2px;
+        letter-spacing: 0;
         line-height: 1;
-        transform: translateX(-31px);
     }
 
     .c-contact__table {
-        margin-top: 15.5%;
-        margin-left: -15.5%;
+        margin-top: 85px;
+        max-width: 500px;
     }
 
     .c-contact__tr {
         margin-bottom: 12px;
-    }
-
-    .c-contact__tr:nth-child(3) {
-        .c-contact__td {
-            padding-top: 2px;
-        }
-    }
-
-    
-    .c-contact__td {
-        width: 360px;
-        color: #000;
-        font-weight: 400;
-        font-size: 2.5rem;
-        line-height: 1.8;
-        letter-spacing: 0;
-        margin-left: 21px;     
-    }
-
-    .c-contact__td--edit {
-        margin-left: -10px;
     }
 
     .c-contact__td--text {
@@ -1210,21 +1009,16 @@ section {
         line-height: 1;
         font-weight: 400;
         text-align: center;
-        padding: 11px 0;
+        padding: 8px 0;
         display: block;
     }
 
-    .c-contact__note {
-        margin-left: 21%;
-        margin-top: -0.5%;
-        color: #000;
-        font-size: 1.5rem;
+    .c-contact__td {
+        width: 360px;
         font-weight: 400;
-    }
-
-    .c-contact__note--edit {
-        margin-right: 20px;
-        margin-left: -1px;
+        font-size: 2.5rem;
+        line-height: 1.5;
+        letter-spacing: 0;
     }
 
     .c-contact__voucher {
@@ -1239,16 +1033,13 @@ section {
         max-width: 1200px;
         border: 1px solid #000;
         margin: 0 auto;
-        padding: 107px 0 105px;
+        padding: 104px 0;
         font-size: 4.8rem;
         font-weight: 300;
-        letter-spacing: 4.5px;
+        letter-spacing: 1px;
         line-height: 1.5;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         text-align: center;
     }
-
-    
-
 }
