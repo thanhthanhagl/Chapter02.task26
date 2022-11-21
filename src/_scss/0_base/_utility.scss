@@ -140,10 +140,13 @@
 
 .c-house {
     .c-house__desc--edit {
+        font-size: 3.4rem;
+        margin-left: -9px;
+        margin-right: -15px;
         @include sp {
             margin-left: -4px;
         }
-    }
+    }    
 }
 
 .c-case01 {
