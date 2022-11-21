@@ -12,7 +12,7 @@
 .c-web {
     .c-web__heading--letter {
         margin-top: 30px;
-        transform: translateX(2px);
+        transform: translate(2px, 1px);
     }
 
     .c-web__heading--people {
@@ -22,27 +22,16 @@
 
     .c-web__heading--note {
         margin-top: 25px;
-        transform: translateX(1px);
     }
 
     .c-web__heading--document {
         margin-top: 28px;
-        transform: translateX(1px);
+        transform: translateY(1px);
     }
 
     .c-web__heading--gift {
         margin-top: 25px;
-        transform: translateX(2px);
-    }
-
-    .c-web__item--text {
-        text-align: center;
-        color: $text-color;
-        font-weight: 400;
-        font-size: 1.5rem;
-        letter-spacing: -1px;
-        line-height: 1.5;
-        transform: translateX(-7px);
+        transform: translateY(1px);
     }
 
     .c-web__item--textedit {
@@ -62,14 +51,14 @@
     }
 
     .c-web__item3 {
-        .c-web__item--text {
-            margin-left: 1px;
+        .c-web__p--bottom {
+            margin-left: 0;
         }
     }
 
     .c-web__item4 {
         .c-web__item--text {
-            letter-spacing: -1.5px;
+            letter-spacing: -1.6px;
         }
 
         .c-web__p--top {
@@ -77,17 +66,17 @@
         }
 
         .c-web__p--bottom {
-            margin-left: -8px;
+            letter-spacing: -0.8px;
         }
     }
 
     .c-web__item5 {
         .c-web__p--top {
-            margin-left: 39px;
+            transform: translate(12px, -1px);
         }
 
         .c-web__p--bottom {
-            margin-left: 26px;
+            transform: translate(7px, 0);
         }
     }
 
@@ -124,7 +113,7 @@
 
     .c-web__item9 {
         .c-web__p--top {
-            margin-left: 5px;
+            margin-left: 7px;
         }
 
         .c-web__item--textedit {
@@ -148,6 +137,77 @@
         }
     }
 }
+
+.c-house {
+    .c-house__desc--edit {
+        @include sp {
+            margin-left: -4px;
+        }
+    }
+}
+
+.c-case01 {
+    padding-left: 45px;
+    @include sp {
+        padding-left: 31px;
+    }
+
+    .c-case01--span {
+        margin-left: -3px;
+    }
+    
+    .c-case01--spansp {
+        @include sp {
+            margin-left: -2px;
+        }
+    }
+    
+    .c-case01--edit {
+        margin-left: -6px;
+        @include sp {
+            margin-left: -4px;
+        }
+    }
+}
+
+.c-case02 {
+    padding-left: 93px;
+    @include sp {
+        padding-left: 19.5%;
+    }
+
+    .c-case02--edit {
+        margin-left: -8px;
+        @include sp {
+            margin-left: -6px;
+        }
+    }
+    
+    .c-case02--span {
+        margin-left: 3px;
+        margin-right: -4px;
+        @include sp {
+            margin-left: 0;
+            margin-right: -2px;
+        }
+    }
+}
+
+
+.c-case03 {
+    padding-left: 46px;
+    letter-spacing: -1.8px;
+    @include sp {
+        padding-left: 9.5%;
+        padding-top: 1px;
+    }
+
+    .c-case03--edit {
+        margin: 0 -3px;
+    }
+}
+
+
 //------------------------------------------------------------
 // color
 //------------------------------------------------------------

@@ -13,6 +13,17 @@ body {
 
 //-------------------------------------------------------
 main {
+    // padding: 0px 0 100px;
+}
+
+.c-sp {
+    display: none;
+
+    @include sp {
+        display: block;
+    }
+
+    ;
 }
 
 section {
@@ -25,7 +36,7 @@ section {
     margin: 0 auto;
 
     @include sp {
-        max-width: 375px;
+        width: 375px;
     }
 }
 
@@ -42,34 +53,72 @@ section {
 
 //-----------------section case------------------
 .c-case {
-    padding: 50px 40px;
+    padding: 47px 40px;
+
+    @include sp {
+        padding: 23px 0;
+    }
 
     .c-case__title {
-        margin-top: 19px;
+        margin-top: 21px;
         color: $title-color;
         font-size: 3.6rem;
         font-weight: 400;
         text-align: center;
         letter-spacing: 0;
         line-height: 2;
+        transform: translateX(-1px);
+
+        @include sp {
+            font-size: 1.5rem;
+        }
     }
 
     .c-case__titleedit {
         margin-left: 8px;
+
+        @include sp {
+            margin-left: 0;
+        }
     }
 
     .c-case__row {
         position: relative;
         max-width: 1546px;
         width: 100%;
-        min-width: 375px;
+        min-width: 325px;
         margin: auto;
         padding: 15px 0;
+
+        @include sp {
+            padding: 7px 25px;
+        }
     }
 
     .c-case__col {
         width: 470px;
         position: relative;
+        @include tab {
+            margin: 0 auto;
+        }
+
+        @include sp {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &:last-child {
+            @include sp {
+                .c-case__label {
+                    left: 56%;
+                }
+
+                .c-case__text {
+
+                    letter-spacing: -1.4px;
+                }
+            }
+        }
     }
 
     .c-case__num {
@@ -91,6 +140,22 @@ section {
             top: 38.5%;
             left: 23%;
             color: #c7c7c7;
+
+            @include sp {
+                letter-spacing: 3.5px;
+                top: 38%;
+                left: 25%;
+            }
+        }
+
+        @include sp {
+            font-size: 14.8rem;
+            margin-left: 20px;
+            width: 100%;
+
+            &::after {
+                font-size: 1.7rem;
+            }
         }
     }
 
@@ -99,6 +164,15 @@ section {
 
         &::after {
             left: 22%;
+
+            @include sp {
+                left: 67%;
+            }
+        }
+
+        @include sp {
+            text-align: right;
+            margin-left: 0;
         }
     }
 
@@ -107,31 +181,38 @@ section {
 
         &::after {
             left: 21%;
+
+            @include sp {
+                left: 25%;
+                top: 39%;
+            }
+        }
+
+        @include sp {
+            margin-left: 21px;
+            margin-top: 1px;
         }
     }
-
+    
+    .c-case__col:nth-child(2) {
+        @include sp {
+            .c-case__textbox {
+                &::before {
+                    left: 64%;
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
 
     .c-case__textbox {
         position: relative;
         background-color: $title-color;
-        width: 470px;
+        max-width: 470px;
         height: 126px;
         padding: 44px 0;
         border-radius: 10px;
-        margin-top: -3px;
-
-
-        &:hover {
-            opacity: 0.75;
-            filter: blur(5px);
-            box-shadow: 7px 7px #68696c;
-        }
-
-        &:focus {
-            opacity: 0.75;
-            filter: blur(5px);
-            box-shadow: 7px 7px #68696c;
-        }
+        margin-top: -4px;
 
         &::before {
             content: "";
@@ -142,6 +223,16 @@ section {
             position: absolute;
             top: -21%;
             left: 29%;
+
+            @include sp {
+                border-width: 0 21px 29px 1px;
+            }
+        }
+
+        @include sp {
+            margin-top: -3px;
+            height: 88px;
+            padding: 30px 0;
         }
     }
 
@@ -151,6 +242,10 @@ section {
         font-weight: bold;
         letter-spacing: -1.1px;
         line-height: 1.5;
+
+        @include sp {
+            font-size: 1.7rem;
+        }
     }
 
     .c-case__label {
@@ -160,8 +255,15 @@ section {
         position: absolute;
         background-color: #7a89a8;
         border-radius: 18px;
-        top: -12px;
+        top: -13px;
         right: -13px;
+
+        @include sp {
+            width: 45.1%;
+            height: 26.6%;
+            top: -9%;
+            left: -1.5%;
+        }
     }
 
     .c-case__label--text {
@@ -171,36 +273,45 @@ section {
         font-size: 1.8rem;
         font-family: "Noto Serif JP", sans-serif;
         padding-left: 21px;
+
+        @include sp {
+            font-size: 1.2rem;
+            padding: 5px 15px;
+            line-height: 1;
+            letter-spacing: -0.7px;
+            display: block;
+        }
     }
 
     .c-case__label--textedit {
         padding-left: 39px;
         letter-spacing: 0;
-    }
 
-    .c-case01 {
-        padding-left: 45px;
-    }
-
-    .c-case02 {
-        padding-left: 93px;
-    }
-
-    .c-case03 {
-        padding-left: 46px;
-        letter-spacing: -1.8px;
+        @include sp {
+            padding-left: 28px;
+        }
     }
 }
 
 .c-model {
     margin: 0 auto;
-    padding: 48px 0 46px;
+    padding: 51px 0 46px;
+
+    @include sp {
+        padding: 40px 42.5px;
+    }
 
     .c-model__subtitle {
         text-align: center;
         font-size: 3.4rem;
         font-weight: 400;
         color: $text-color;
+
+        @include sp {
+            font-size: 1.3rem;
+            margin: 0 1px;
+            line-height: 0.2;
+        }
     }
 
     .c-model__subblue {
@@ -210,6 +321,11 @@ section {
         margin-left: 8px;
         font-family: "Noto Serif JP", sans-serif;
         line-height: 1.8;
+
+        @include sp {
+            font-size: 1.7rem;
+            margin-left: 4px;
+        }
     }
 
     .c-model__title {
@@ -219,73 +335,74 @@ section {
         text-align: center;
         line-height: 1.9;
         letter-spacing: 4.7px;
+
+        @include sp {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            margin-top: 1px;
+        }
     }
 
     .c-model__list {
         margin: 38px auto 0;
         max-width: 1200px;
         width: 100%;
+
+        @include sp {
+            max-width: 375px;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     .c-model__item {
         margin-bottom: 71px;
+        @include tab {
+            margin-bottom: 20px;
+        }
     }
 
     .c-model__colleft {
         width: 42%;
         margin-left: 95px;
+        position: relative;
+
+        @include sp {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     .c-model__colright {
         width: 44.5%;
+
+        @include sp {
+            width: 100%;
+        }
     }
 
     .c-model__merit {
         margin-left: -81px;
-        margin-top: -3px;        
-    }
+        margin-top: -3px;
 
-    .c-model__item:nth-child(2) {
-        .c-model__merit {
-            margin-left: -54px;
-            margin-top: -3px;
-        }
-
-        .c-model__heading {
-            margin-left: 27px;
-            transform: translateY(-1px);
-
-            &::after {
-                right: -0.2%;
-                top: -24%;
-            }
-        }
-
-        .c-model__text {
-            margin-left: -17px;
-            transform: translateX(2px);
-        }
-
-        .c-model__img {
+        @include sp {
             margin-left: 0;
+            margin-top: 4%;
+            width: 15.5%;
         }
     }
 
-    .c-model__item:nth-child(3) {
-        .c-model__heading {
-            transform: translateY(-1px);
-
-            &::after {
-                right: -1.5%;
-                top: -26%;
-            }
+    .c-model__imgtext {
+        position: absolute;
+        top: 25.5%;
+        right: 10.5%;
+        @include sp {
+            width: 21px;
+            top: 35%;
+            right: 8%;
         }
 
-        .c-model__text {
-            margin-right: -20px;
-            transform: translateY(-1px);
-        }
-    }
+    }    
 
     .c-model__heading {
         font-weight: bold;
@@ -295,11 +412,9 @@ section {
         line-height: 1.8;
         position: relative;
 
-        &::after {
-            content: url("./assets/img/icontext.svg");
-            position: absolute;
-            top: -25%;
-            right: 10.5%;
+        @include sp {
+            font-size: 1.4rem;
+            transform: translate(41px, -1px);
         }
     }
 
@@ -309,7 +424,12 @@ section {
         letter-spacing: 0;
         color: $text-color;
         line-height: 1.8;
-        margin-left: 8px;
+        margin-left: 3px;
+
+        @include sp {
+            font-size: 1.4rem;
+            margin-left: 1px;
+        }
     }
 
     .c-model__heading--blue {
@@ -317,6 +437,10 @@ section {
         letter-spacing: 0;
         color: $text-blue;
         line-height: 1.9;
+
+        @include sp {
+            font-size: 1.8rem;
+        }
     }
 
     .c-model__text {
@@ -324,13 +448,103 @@ section {
         color: $text-color;
         letter-spacing: 0.7px;
         line-height: 1.6;
+        font-weight: 400;
         margin-top: 15px;
+        @include sp {
+            font-size: 1rem;
+            margin-top: 5px;
+            margin-left: 43px;
+            line-height: 1.7;
+            width: 258px;
+        }
     }
 
     .c-model__img {
         width: 530px;
         margin-left: 5px;
         margin-top: 26px;
+        @include sp {
+            margin: 15px auto;
+        } 
+    }
+
+    .c-model__item:nth-child(2) {
+        .c-model__merit {
+            margin-left: -54px;
+            margin-top: -3px;
+
+            @include sp {
+                margin-left: -2%;
+                margin-top: -1.5%;
+            }
+        }
+
+        .c-model__imgtext {
+            position: absolute;
+            top: 25%;
+            right: 5.5%;
+    
+        }
+
+        .c-model__heading {
+            margin-left: 27px;
+            transform: translateY(-1px);
+            @include sp {
+                margin-left: 12%;
+                transform: translateY(-1px);
+            }
+        }
+
+        .c-model__text {
+            margin-left: -17px;
+            transform: translateX(2px);
+            @include sp {
+                margin-left: 12%;
+                transform: translate(2px, 0);
+            }
+        }
+
+        .c-model__img {
+            margin-left: 0;
+            @include sp {
+                margin-left: -1px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .c-model__item:nth-child(3) {
+        .c-model__merit {
+            @include sp {
+                margin-left: -2%;
+                margin-top: -1.5%;
+            }
+        }
+
+        .c-model__heading {
+            transform: translateY(-1px);
+            @include sp {
+                transform: translate(35px, -1px);
+            }
+        }
+
+        .c-model__imgtext {
+            position: absolute;
+            top: 25%;
+            right: -1.5%;
+            @include sp {
+                top: 31%;
+                right: 0;
+            }
+        }
+
+        .c-model__text {
+            margin-right: -20px;
+            transform: translateY(-1px);
+            @include sp {
+                transform: translate(-8px, 1px);
+            }
+        }
     }
 
 }
@@ -339,11 +553,22 @@ section {
     margin: 0 auto;
     padding: 50px 90px 0;
 
+    @include sp {
+        padding: 50px 0 0;
+    }
+
     .c-house__content {
         background-color: #ededed;
         max-width: 1740px;
         padding: 0 78.5px 77px;
         position: relative;
+
+        @include sp {
+            max-width: 375px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 10px;
+        }
     }
 
     .c-house__icon {
@@ -352,6 +577,10 @@ section {
         top: -23%;
         left: 11.8%;
         z-index: 1;
+        @include sp {
+            top: unset;
+            bottom: -10%;
+        }
     }
 
     .c-house__title {
@@ -364,8 +593,15 @@ section {
         color: #000;
         text-align: right;
         position: relative;
-        top: -62px;
-        left: 30px;
+        top: -63px;
+        left: 31px;
+
+        @include sp {
+            font-size: 3rem;
+            letter-spacing: 3.1px;
+            top: -68px;
+            left: -7px;
+        }
     }
 
     .c-house__desc {
@@ -377,7 +613,11 @@ section {
         font-family: $main-fonts;
         color: $text-color;
         text-align: right;
-        transform: translate(5px, -9px);
+        transform: translate(4px, -9px);
+        @include sp {
+            font-size: 1.3rem;
+            transform: translate(6px, -2px);
+        }
     }
 
     .c-house__desc--blue {
@@ -386,20 +626,32 @@ section {
         line-height: 2.5;
         color: $text-blue;
         font-family: "Noto Serif JP", sans-serif;
+        @include sp {
+            font-size: 1.7rem;
+        }
     }
 
     .c-house__list {
-        margin-top: -50px;
+        margin-top: -52px;
     }
 
     .c-house__item {
         width: 377px;
         background-color: #fff;
-        padding: 23px 20px 45px;
+        padding: 23px 20px 65px;
+
+        @include tab {
+            width: 48.4%;
+            padding: 12px 10px;
+        }
     }
 
     .c-house__img {
-        height: 258px;
+        max-height: 258px;
+        height: 100%;
+        @include tab {
+            max-height: 116px;
+        }
     }
 
     .c-house__name {
@@ -408,7 +660,10 @@ section {
         letter-spacing: 0;
         line-height: 1.7;
         color: $text-color;
-        margin: 20px 0 10px;
+        margin: 21px 0 11px;
+        @include sp {
+            font-size: 1.1rem;
+        }
     }
 
     .c-house__info {
@@ -418,17 +673,20 @@ section {
         letter-spacing: 0;
         line-height: 1.4;
         padding: 0 10px 0 2px;
+        @include sp {
+            font-size: 1rem;
+        }
     }
 
     .c-house__voucher {
         display: block;
         margin: 0 auto;
-        padding: 119px 270px 0;
+        margin: 120px 270px 0;
     }
 }
 
-.c-design { 
-    
+.c-design {
+
     padding-top: 122px;
     margin: 0 auto;
 
@@ -439,12 +697,20 @@ section {
         &::after {
             content: "";
             position: absolute;
-            width: 83.6%;
+            max-width: 1204px;
+            width: 100%;
             height: 527px;
             top: 83.5%;
-            left: 49.5%;
+            left: 49.6%;
             z-index: -1;
             background-color: #ededed;
+
+            @include sp {
+                width: 52%;
+                left: 48%;
+                height: 257px;
+                top: 40%;
+            }
         }
     }
 
@@ -495,16 +761,19 @@ section {
         background-color: $text-color;
         width: 57px;
         height: 1px;
-        margin: 37px 0 27px;
+        margin: 37px 0 25px;
     }
 
     .c-design__subtitle {
         font-weight: 400;
         font-size: 2.7rem;
-        line-height: 1.3;
+        line-height: 1.4;
         color: $text-color;
         letter-spacing: 0;
         padding-left: 1px;
+        @include sp {
+            font-size: 1.3rem;
+        }
     }
 
     .c-design__desc {
@@ -513,12 +782,16 @@ section {
         line-height: 1.8;
         color: $text-color;
         letter-spacing: 0;
-        margin-top: 38px;
+        margin-top: 35px;
+        @include sp {
+            font-size: 1rem;
+        }
     }
 
     .c-design__right {
-        width: 40%;
-        margin: 12.2% -6.4% 0 0;
+        max-width: 44.5%;
+        width: 100%;
+        margin: 12.3% -11% 0 0;
     }
 
 }
@@ -555,8 +828,8 @@ section {
     }
 
     .c-plan__detail {
-        width: 1200px;
-        margin: 50px auto 0;
+        max-width: 1200px;
+        margin: 48px auto 0;
         padding: 0 70px;
         display: flex;
         justify-content: space-between;
@@ -568,11 +841,14 @@ section {
         margin-left: 2.5%;
     }
 
-    .c-plan__detail--p {     
+    .c-plan__detail--p {
         font-weight: 300;
         font-size: 2.2rem;
         line-height: 1.7;
         letter-spacing: 0;
+        @include sp {
+            font-size: 1.2rem;
+        }
     }
 
     .c-plan__detail--pright {
@@ -600,7 +876,7 @@ section {
     }
 
     .c-plan__table {
-        margin-top: 90px;
+        margin-top: 91px;
     }
 
     .c-plan__tr {
@@ -610,13 +886,16 @@ section {
         font-weight: 300;
         margin-left: 5px;
         color: $text-color;
-    }    
+    }
 
     .c-plan__th {
         width: 10%;
         font-size: 2.5rem;
         letter-spacing: -1.5px;
         line-height: 1.7;
+        @include sp {
+            font-size: 1.2rem;
+        }
     }
 
     .c-plan__th--edit {
@@ -629,16 +908,19 @@ section {
         letter-spacing: 0;
         line-height: 1.7;
         padding-left: 13.4%;
+        @include sp {
+            font-size: 1.2rem;
+        }
     }
 
-    .c-plan__tr:nth-child(3) {        
+    .c-plan__tr:nth-child(3) {
         padding-bottom: 6px;
 
         .c-plan__td {
             padding-left: 12.4%;
             margin-top: -6px;
-        }    
-        
+        }
+
         .c-plan__tag:nth-child(2) {
             padding-right: 18px;
         }
@@ -652,7 +934,7 @@ section {
     .c-plan__tr:nth-child(4) {
         .c-plan__td {
             padding-left: 12.4%;
-            margin-top: -4px;
+            margin-top: -6px;
         }
 
         .c-plan__tag:nth-child(1) {
@@ -669,10 +951,13 @@ section {
         line-height: 1;
         letter-spacing: 0;
         display: inline-block;
-        padding: 9px 16px;
+        padding: 6px 16px 9px;
         border: 1px solid #cbcbcb;
         border-radius: 4px;
         margin-right: 15px;
+        @include sp {
+            font-size: 0.9rem;
+        }
     }
 
     .c-plan__tag--text {
@@ -695,9 +980,13 @@ section {
 }
 
 .c-finance {
-    padding: 106px 323px 109px;
+    padding: 106px 323px 60px;
     margin: 0 auto;
     background-color: #ededed;
+
+    @include tab {
+        padding: 0;
+    }
 
     .c-finance__title {
         text-align: center;
@@ -722,7 +1011,11 @@ section {
         line-height: 1;
         padding: 14px 60px 21px;
         text-align: center;
-        width: 410px;  
+        width: 410px;
+
+        @include sp {
+            width: 375px;
+        }
     }
 
     .c-finance__subtitle--edit {
@@ -736,9 +1029,10 @@ section {
 
     .c-finance__col {
         position: relative;
-        width: 604.5px;
+        width: 605px;
         background-color: #fff;
-        padding: 6.2% 7% 3.5%;
+        padding: 6.1% 7% 3.5%;
+        margin-bottom: 50px;
 
         &:last-child {
             &::after {
@@ -746,9 +1040,12 @@ section {
                 width: 206px;
                 position: absolute;
                 z-index: 1;
-                top: -3%;
-                right: -10%;
+                top: -4.5%;
+                right: -7.2%;
 
+                @include sp {
+                    right: 0;
+                }
             }
         }
     }
@@ -758,7 +1055,11 @@ section {
         font-size: 2.2rem;
         letter-spacing: 0;
         line-height: 1;
-        margin-bottom: 56px;
+        margin-bottom: 55px;
+    }
+
+    .c-finance__listing--edit {
+        margin-right: 6px;
     }
 
     .c-finance__text {
@@ -766,8 +1067,7 @@ section {
         font-size: 2.6rem;
         line-height: 1;
         letter-spacing: 0;
-        margin-top: 31px;
-        margin-left: 5px;
+        margin: 31px 0 0 5px;
     }
 
     .c-finance__number {
@@ -776,7 +1076,7 @@ section {
         font-size: 9rem;
         letter-spacing: 0;
         line-height: 1.6;
-        transform: translate(-2px, 0);
+
     }
 
     .c-finance__unit {
@@ -789,15 +1089,18 @@ section {
         letter-spacing: 0;
         line-height: 1.7;
         font-weight: 400;
+        margin-top: 11px;
     }
 }
 
 .c-web {
-    margin: 0 auto;
-    padding: 80px 118px;
+    margin: 53px auto 55px;
+    padding: 0 10px;
 
     .c-web__title {
         text-align: center;
+        margin-top: 2px;
+        margin-bottom: 12px;
     }
 
     .c-web__title--black {
@@ -812,7 +1115,7 @@ section {
         font-family: "Noto Serif JP", sans-serif;
         font-weight: 400;
         font-size: 4.6rem;
-        letter-spacing: 2px;
+        letter-spacing: 11.5px;
         line-height: 2;
         color: $text-blue;
     }
@@ -822,13 +1125,28 @@ section {
         font-weight: 300;
         font-size: 2.7rem;
         letter-spacing: 0;
-        line-height: 1.5;
+        line-height: 1.4;
         text-align: center;
+        transform: translate(0, 3px);
+    }
+
+    .c-web__subtitle--ok {
+        margin-left: 7px;
+    }
+
+    .c-web__subtitle--bottom {
+        transform: translate(5px, 3px);
+    }
+
+    .c-web__progress {
+        margin: 4% auto 6.5%;
+        max-width: 1686px;
+        width: 100%;
     }
 
     .c-web__step {
         width: 286px;
-        padding: 50px 23px;
+        padding: 50px 0 48px;
         position: relative;
         color: #fff;
 
@@ -840,14 +1158,20 @@ section {
             background-color: #565f64;
         }
 
+        &:nth-child(n+3) {
+            .c-web__step--desc {
+                transform: translateX(-1px);
+            }
+        }
+
         &:nth-child(5) {
             background-color: #7a89a8;
         }
     }
 
     .c-web__step--icon {
-        width: 40px;
-        margin: 0 40%;
+        margin: 0 auto;
+        display: block;
     }
 
     .c-web__step--step {
@@ -865,25 +1189,41 @@ section {
         font-size: 1.6rem;
         letter-spacing: 0;
         line-height: 1.7;
-        border-top: 0.5px solid #fff;
+        border-top: 1px solid #fff;
+        margin: 9px 23px 0;
+        transform: translateX(2px);
+        padding-top: 14px;
     }
 
     .c-web__step--svg {
         width: 8px;
         position: absolute;
-        top: 50%;
-        right: -12%;
+        top: 48%;
+        right: -12.5%;
     }
 
     .c-web__notify {
         max-width: 1200px;
-        margin: 125px auto 0;
+        margin: 0 auto;
+        width: 100%;
         border: 1px solid $text-color;
+
+        @include sp {
+            max-width: 334px;
+            margin: 0 auto;
+        }
     }
 
     .c-web__top {
         background-color: $text-color;
-        padding: 50px 90px;
+        padding: 51px 0 44px;
+    }
+
+    .c-web__top--heading {
+        margin-left: 90px;
+        margin-top: 9px;
+        display: flex;
+        column-gap: 53px;
     }
 
     .c-web__top--btn {
@@ -893,50 +1233,98 @@ section {
         font-family: $main-fonts;
         font-weight: bold;
         font-size: 2.3rem;
-        line-height: 1;
+        line-height: 2.1;
         letter-spacing: 0;
-        padding: 15px 35.5px;
+        width: 238px;
+        height: 52px;
+        text-align: center;
+        transform: translate(-1px, 0);
     }
 
     .c-web__top--title {
         font-weight: 300;
         font-size: 3.2rem;
-        letter-spacing: 1.4px;
+        letter-spacing: 2px;
         line-height: 1.7;
         color: #fff;
+        transform: translate(-1px, -5px);
+    }
+
+    .c-web__top--titleedit {
+        margin-left: -5px;
+        margin-right: 5px;
     }
 
     .c-web__top--desc {
         font-weight: 300;
         font-size: 2rem;
-        letter-spacing: 0;
-        line-height: 1;
+        letter-spacing: 0.1px;
         color: #fff;
+        margin-left: 97px;
+        margin-top: 14px;
+    }
+
+    .c-web__top--descedit {
+        margin-left: -9px;
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: 0.1px;
+        color: #fff;
+        margin-right: 4px;
     }
 
     .c-web__table {
-        padding: 29px;
+        padding: 37px 41px 48px;
         display: flex;
-        flex-direction: row;
+
+        @include sp {
+            flex-direction: column;
+        }
+    }
+
+    .c-web__table--group {
+        width: 45%;
+
+        @include sp {
+            width: 290px;
+        }
+    }
+
+    .c-web__group--col {
+        width: 20%;
+
+        .c-web__table--td {
+            width: 100%;
+            border-right: 0;
+
+            &:first-child {
+                border-bottom: 1px solid #aeaeae;
+
+                @include sp {
+                    border-bottom: 0 none;
+                    border-right: 1px solid #aeaeae;
+                }
+            }
+        }
+
+        @include sp {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .c-web__group {
+        display: flex;
+
+        &:first-child {
+            border-bottom: 1px solid #aeaeae;
+        }
     }
 
     .c-web__table--td {
-        width: 228px;
-        border-right: 1px solid #aeaeae;
-
-        &:nth-child(-n+5) {
-            border-bottom: 1px solid #aeaeae;
-        }
-
-        &:nth-child(5),
-        &:nth-child(10) {
-            border-right: 0;
-        }
-    }
-
-    .c-web__item--img {
+        height: 208px;
         width: 50%;
-        margin: 20px 57px 15px;
+        border-right: 1px solid #aeaeae;
     }
 
     .c-web__item--text {
@@ -944,25 +1332,60 @@ section {
         color: $text-color;
         font-weight: 400;
         font-size: 1.5rem;
-        letter-spacing: 0;
+        letter-spacing: -1px;
         line-height: 1.5;
+        transform: translateX(-8px);
     }
 }
 
 .c-contact {
+    padding: 53px 0 26px;
+    margin: 0 auto;
+
     .c-contact__content {
         margin-bottom: 92px;
+        max-height: 700px;
+        height: 100vh;
     }
 
     .c-contact__map {
         width: 50%;
+        position: relative;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @include sp {
+            width: 100%;
+            height: 290px;
+        }
     }
 
     .c-contact__info {
         width: 50%;
         background-color: #ededed;
-        padding: 130px 180px 125px;
+        padding: 1.5%;
+
+        @include sp {
+            width: 100%;
+        }
     }
+
+    .c-contact__info--wrapper {
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        padding-top: 0.5%;
+    }
+
 
     .c-contact__title {
         text-align: center;
@@ -970,7 +1393,10 @@ section {
         font-family: "Oswald", sans-serif;
         font-size: 4.8rem;
         font-weight: 300;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
+        margin-bottom: 1.7%;
+        margin-top: 18.5%;
+        padding-right: 9.5%;
     }
 
     .c-contact__hr {
@@ -978,25 +1404,55 @@ section {
         background-color: #000;
         width: 74px;
         height: 1px;
-        margin: 15px auto 30px;
+        margin: 16px auto 34px;
+        transform: translateX(-32px);
 
     }
 
     .c-contact__desc {
         text-align: center;
+        color: #000;
         font-weight: 300;
         font-size: 2.8rem;
-        letter-spacing: 0;
+        letter-spacing: -0.2px;
         line-height: 1;
+        transform: translateX(-32px);
     }
 
     .c-contact__table {
-        margin-top: 85px;
-        max-width: 500px;
+        margin-top: 15.5%;
+        margin-left: -15.7%;
     }
 
     .c-contact__tr {
         margin-bottom: 12px;
+
+        &:first-child {
+            .c-contact__td {
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .c-contact__tr:nth-child(3) {
+        .c-contact__td {
+            padding-top: 2px;
+        }
+    }
+
+
+    .c-contact__td {
+        width: 360px;
+        color: #000;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 1.8;
+        letter-spacing: 0;
+        margin-left: 21px;
+    }
+
+    .c-contact__td--edit {
+        margin-left: -10px;
     }
 
     .c-contact__td--text {
@@ -1009,23 +1465,28 @@ section {
         line-height: 1;
         font-weight: 400;
         text-align: center;
-        padding: 8px 0;
+        padding: 9px 0;
         display: block;
     }
 
-    .c-contact__td {
-        width: 360px;
+    .c-contact__note {
+        margin-left: 21%;
+        margin-top: -0.5%;
+        color: #000;
+        font-size: 1.5rem;
         font-weight: 400;
-        font-size: 2.5rem;
-        line-height: 1.5;
-        letter-spacing: 0;
+    }
+
+    .c-contact__note--edit {
+        margin-right: 20px;
+        margin-left: -1px;
     }
 
     .c-contact__voucher {
         max-width: 1200px;
         width: 100%;
         display: block;
-        margin: 93px auto 89px;     
+        margin: 91px auto 87px;
     }
 
     .c-contact__btn {
@@ -1033,13 +1494,16 @@ section {
         max-width: 1200px;
         border: 1px solid #000;
         margin: 0 auto;
-        padding: 104px 0;
+        padding: 109px 0 102px;
         font-size: 4.8rem;
         font-weight: 300;
-        letter-spacing: 1px;
+        letter-spacing: 4.7px;
         line-height: 1.5;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         text-align: center;
     }
+
+
+
 }

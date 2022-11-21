@@ -2,7 +2,7 @@
 ------------------------------------------------------------*/
 .c-header {
     .c-header__banner {
-        height: 1050px;
+        height: 1052px;
         width: 100%;
         position: relative;
         background-image: url("./assets/img/banner.jpg");
@@ -10,7 +10,7 @@
         background-size: cover;
         background-position: center;
         @include sp {            
-            height: 411px;
+            height: 409px;
         }
     }
 
@@ -23,12 +23,23 @@
         transform: translate(-50%, -50%);
         background-color: rgba(255, 255, 255, 0.49);
         padding: 114.4px 26px 82.5px;
+        @include sp {            
+            width: 217px;
+            height: 230px;
+            padding: 15% 4% 10%;
+            top: 46%;
+            left: 50%;
+        }
     }
 
     .c-header__logo {
         display: block;
         width: 227px;
         margin: 0 auto 55.2px;
+        @include sp {
+            width: 61%;
+            margin: 0 auto 15%;
+        }
     }   
 
     .c-header__text {
@@ -40,11 +51,18 @@
         font-weight: bold;
         text-align: center;
         transform: translateX(-6px);
+        @include sp {
+            font-size: 1rem;
+            transform: translateX(-5px);
+        }
     }
 
     .c-header__txtmiddle {
         margin-right: -7px;
         margin-left: -3px;
+        @include sp {
+            margin: 0 -4px;
+        }
     }
 
     .c-header__txtlast {
@@ -56,5 +74,10 @@
         margin: 38px 30px 0;
         width: 322px;
         height: 56px;
+        @include sp {
+            width: 87%;
+            height: 20%;
+            margin: 19px 20px;
+        }
     }
 }

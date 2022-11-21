@@ -13,4 +13,8 @@ title
     letter-spacing: 4.8px;
     text-transform: uppercase;
     color: $title-color;
+    @include sp {
+        font-size: 2.4rem;
+        letter-spacing: 2.4px;
+    }
 }
