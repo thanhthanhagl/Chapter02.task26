@@ -8,75 +8,95 @@ icon
     .c-web__icon--letter {
         width: 41px;
         transform: translate(2px, 6px);
+        @include sp {
+            width: 22px;
+            transform: translate(-1.5px, 6px);
+        }
     }
 
     .c-web__icon--people {
         width: 36px;
         transform: translate(2px, -1px);
+        @include sp {
+            width: 18px;
+            transform: translate(2px, 2px);
+
+        }
     }
 
     .c-web__icon--note {
         width: 33px;
         transform: translate(1px, 4px);
+        @include sp {
+            width: 17px;
+            transform: translate(-1px, 6px);
+        }
     }
 
     .c-web__icon--document {
         width: 35px;
         transform: translate(0, 7px);
+        @include sp {
+            width: 18px;
+        }
     }
 
     .c-web__icon--gift { 
         width: 38px;
         transform: translate(1px, 3px);
+        @include sp {
+            width: 18px;
+            transform: translate(-2px, 6px);
+        }
     }
 
     .c-web__icon1 {
-        width: 105px;
+        width: 46%;
         margin: 29px 53px 19px;
     } 
 
     .c-web__icon2 {
-        width: 96px;
+        width: 43%;
         margin: 23px 58px 27px;
     }
 
     .c-web__icon3 {
-        width: 129px;
+        width: 57%;
         margin: 20px 43px 8px;
     }
 
     .c-web__icon4 {
-        width: 154px;
+        width: 67%;
         margin: 56px 31px 29px;
     }
 
     .c-web__icon5 {
-        width: 95px;
+        width: 47%;
         margin: 22px 61px 16px;
     }
 
     .c-web__icon6 {
-        width: 97px;
+        width: 43%;
         margin: 21px 56px 22px;
     }
 
     .c-web__icon7 {
-        width: 87px;
-        margin: 26px 63px 25px;
+        width: 38.3;
+        margin: 25px 63px 27px;
     }
 
     .c-web__icon8 {
-        width: 114px;
-        margin: 25px 50px 17px;
+        width: 49.9%;
+        margin: 25px 50px 19px;
     }
 
     .c-web__icon9 {
-        width: 124px;
-        margin: 24px 46px 17px;
+        width: 55%;
+        margin: 24px 44px 17px;
     }
 
     .c-web__icon10 {
-        width: 117px;
+        width: 58%;
         margin: 23px 49px 9px;
     }    
 }
