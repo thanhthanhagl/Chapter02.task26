@@ -52,51 +52,82 @@ icon
 
     .c-web__icon1 {
         width: 46%;
-        margin: 29px 53px 19px;
+        margin: 29px 0 19px;
+        transform: translateX(-8px);
+        @include tab {
+            width: 30%;
+        }
     } 
 
     .c-web__icon2 {
         width: 43%;
-        margin: 23px 58px 27px;
+        margin: 23px 0 27px;
+        @include tab {
+            width: 27%;
+        }
     }
 
     .c-web__icon3 {
         width: 57%;
-        margin: 20px 43px 8px;
+        margin: 20px 0 8px;
+        @include tab {
+            width: 41%;
+        }
     }
 
     .c-web__icon4 {
         width: 67%;
-        margin: 56px 31px 29px;
+        margin: 56px 0 29px;
+        @include tab {
+            width: 51%;
+        }
     }
 
     .c-web__icon5 {
         width: 47%;
-        margin: 22px 61px 16px;
+        margin: 22px 0 16px;
+        @include tab {
+            width: 31%;
+        }
     }
 
     .c-web__icon6 {
         width: 43%;
-        margin: 21px 56px 22px;
+        margin: 21px 0 22px;
+        @include tab {
+            width: 27%;
+        }
     }
 
     .c-web__icon7 {
-        width: 38.3;
-        margin: 25px 63px 27px;
+        width: 38.3%;
+        margin: 25px 0 27px;
+        @include tab {
+            width: 32.3%;
+        }
     }
 
     .c-web__icon8 {
         width: 49.9%;
-        margin: 25px 50px 19px;
+        margin: 25px 0 19px;
+        @include tab {
+            width: 33.9%;
+        }
     }
 
     .c-web__icon9 {
         width: 55%;
-        margin: 24px 44px 17px;
+        margin: 24px 0 17px;
+        @include tab {
+            width: 39%;
+        }
     }
 
     .c-web__icon10 {
         width: 58%;
-        margin: 23px 49px 9px;
+        margin: 23px 0 9px;
+        @include tab {
+            width: 42%;
+        }
     }    
 }

@@ -91,6 +91,9 @@
             margin-left: -3px;
             letter-spacing: -2px;
         }
+        @include tab {
+            border-right: none;
+        }
     }
 
     .c-web__item3 {
@@ -111,6 +114,9 @@
         .c-web__p--bottom {
             letter-spacing: -0.8px;
         }
+        @include tab {
+            border-right: none;
+        }
     }
 
     .c-web__item5 {
@@ -121,11 +127,21 @@
         .c-web__p--bottom {
             transform: translate(7px, 0);
         }
+        border-bottom: 1px solid #aeaeae;
+        border-right: 0;
+
+        @include tab {
+            border-bottom: 0 none;
+            border-right: 1px solid #aeaeae;
+        }
     }
 
     .c-web__item6 {
         .c-web__item--text {
             margin-left: -8px;
+        }
+        @include tab {
+            border-bottom: 1px solid #aeaeae;
         }
     }
 
@@ -136,6 +152,10 @@
 
         .c-web__p--bottom {
             margin-left: 0;
+        }
+        @include tab {
+            border-right: unset;
+            border-bottom: 1px solid #aeaeae;
         }
     }
 
@@ -151,6 +171,9 @@
 
         .c-web__p--bottom {
             margin-left: -2px;
+        }
+        @include tab {
+            border-bottom: 1px solid #aeaeae;
         }
     }
 
@@ -168,9 +191,15 @@
         .c-web__p--bottom {
             margin-left: 1px;
         }
+        @include tab {
+            border-right: unset;
+            border-bottom: 1px solid #aeaeae;
+        }
     }
 
     .c-web__item10 {
+        border-right: 0;
+
         .c-web__p--top {
             margin-left: 27px;
         }
@@ -196,14 +225,8 @@
 }
 
 .c-case01 {
-    padding-left: 45px;
-
-    @include sp {
-        padding-left: 31px;
-    }
-
     .c-case01--span {
-        margin-left: -3px;
+        margin-left: -5px;
     }
 
     .c-case01--spansp {
@@ -222,12 +245,6 @@
 }
 
 .c-case02 {
-    padding-left: 93px;
-
-    @include sp {
-        padding-left: 19.5%;
-    }
-
     .c-case02--edit {
         margin-left: -8px;
 
@@ -249,16 +266,16 @@
 
 
 .c-case03 {
-    padding-left: 46px;
-    letter-spacing: -1.8px;
-
-    @include sp {
-        padding-left: 9.5%;
-        padding-top: 1px;
-    }
-
     .c-case03--edit {
         margin: 0 -3px;
+    }
+
+    .c-case03--span {
+        margin-left: -8px;
+
+        @include sp {
+            margin-left: -6px;
+        }
     }
 }
 
