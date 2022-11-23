@@ -9,7 +9,7 @@ icon
         width: 41px;
         transform: translate(2px, 6px);
         @include sp {
-            width: 22px;
+            width: 21px;
             transform: translate(-1.5px, 6px);
         }
     }
@@ -28,8 +28,8 @@ icon
         width: 33px;
         transform: translate(1px, 4px);
         @include sp {
-            width: 17px;
-            transform: translate(-1px, 6px);
+            width: 16px;
+            transform: translate(0, 6px);
         }
     }
 
@@ -46,88 +46,147 @@ icon
         transform: translate(1px, 3px);
         @include sp {
             width: 18px;
-            transform: translate(-2px, 6px);
+            transform: translate(-2px, 5px);
         }
     }
 
     .c-web__icon1 {
         width: 46%;
-        margin: 29px 0 19px;
+        margin: 30px 0 21px;
         transform: translateX(-8px);
         @include tab {
             width: 30%;
+        }
+        @include sp {
+            width: 45%;
+            margin: 17px 0 10px;
+            transform: translateX(0);
         }
     } 
 
     .c-web__icon2 {
         width: 43%;
-        margin: 23px 0 27px;
+        margin: 23px 0 26px;
+        transform: translateX(-8px);
         @include tab {
             width: 27%;
+        }
+        @include sp {
+            width: 41%;
+            margin: 13px 0 16px;
+            transform: translateX(3px);
         }
     }
 
     .c-web__icon3 {
         width: 57%;
-        margin: 20px 0 8px;
+        margin: 20px 0 9px;
+        transform: translateX(-6px);
         @include tab {
             width: 41%;
+        }
+        @include sp {
+            width: 55%;
+            margin: 14px 0 5px;
+            transform: translateX(1px);
         }
     }
 
     .c-web__icon4 {
         width: 67%;
-        margin: 56px 0 29px;
+        margin: 56px 0 30px;
+        transform: translateX(-6px);
         @include tab {
             width: 51%;
+        }
+        @include sp {
+            width: 64%;
+            margin: 24px 0 30px;
+            transform: translateX(0);
         }
     }
 
     .c-web__icon5 {
-        width: 47%;
-        margin: 22px 0 16px;
+        width: 46%;
+        margin: 24px 0 17px;
+        transform: translateX(6px);
         @include tab {
-            width: 31%;
+            width: 30%;
+        }
+        @include sp {
+            width: 39%;
+            margin: 16px 0 8px;
+            transform: translateX(0);
         }
     }
 
     .c-web__icon6 {
         width: 43%;
         margin: 21px 0 22px;
+        transform: translateX(-9px);
         @include tab {
             width: 27%;
+        }
+        @include sp {
+            width: 41%;
+            margin: 12px 0 14px;
+            transform: translateX(1px);
         }
     }
 
     .c-web__icon7 {
         width: 38.3%;
         margin: 25px 0 27px;
+        transform: translateX(-8px);
         @include tab {
             width: 32.3%;
+        }
+        @include sp {
+            width: 37%;
+            margin: 14px 0 16px;
+            transform: translateX(0);
         }
     }
 
     .c-web__icon8 {
         width: 49.9%;
         margin: 25px 0 19px;
+        transform: translateX(-7px);
         @include tab {
             width: 33.9%;
+        }
+        @include sp {
+            width: 48%;
+            margin: 16px 0 11px;
+            transform: translateX(1px);
         }
     }
 
     .c-web__icon9 {
         width: 55%;
         margin: 24px 0 17px;
+        transform: translateX(-7px);
         @include tab {
             width: 39%;
+        }
+        @include sp {
+            width: 53%;
+            margin: 14px 0 11px;
+            transform: translateX(0);
         }
     }
 
     .c-web__icon10 {
-        width: 58%;
-        margin: 23px 0 9px;
+        width: 59%;
+        margin: 23px 0 8px;
+        transform: translateX(5px);
         @include tab {
-            width: 42%;
+            width: 43%;
+        }
+        @include sp {
+            width: 50%;
+            margin: 13px 0 6px;
+            transform: translateX(-1px);
         }
     }    
 }

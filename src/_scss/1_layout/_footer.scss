@@ -14,5 +14,9 @@ footer
         padding: 59px 0 85px;
         width: 206px;
         display: block;
+        @include sp {
+            width: 103px;
+            padding: 9% 0;
+        }
     }
 }

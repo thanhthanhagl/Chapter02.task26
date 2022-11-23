@@ -316,6 +316,9 @@ section {
 .c-model {
     margin: 0 auto;
     padding: 51px 0 46px;
+    @include laptop {
+        padding: 51px 40px 46px;
+    }
 
     @include sp {
         padding: 40px 42.5px 39px;
@@ -516,7 +519,7 @@ section {
         .c-model__imgtext {
             position: absolute;
             top: 25%;
-            right: 5.5%;
+            right: -0.5%;
 
         }
 
@@ -789,6 +792,10 @@ section {
         margin: 120px auto 0;
         max-width: 1200px;
         width: 100%;
+        @include laptop {
+            padding: 0 40px;
+            max-width: 900px;
+        }
 
         @include tab {
             margin: 60px auto 50px;
@@ -1078,12 +1085,15 @@ section {
         padding: 0 70px;
         display: flex;
         justify-content: space-between;
+        @include laptop {
+            flex-direction: column;
+            max-width: 600px;
+        }
 
         @include sp {
             max-width: 170px;
             margin: 5.4% auto 0;
             padding: 0;
-            flex-direction: column;
         }
     }
 
@@ -1091,9 +1101,11 @@ section {
         width: 33.33%;
         display: inline-flex;
         margin-left: 2.5%;
+        @include laptop {
+            width: 100%;
+        }
 
         @include sp {
-            width: 100%;
             margin-left: 2%;
 
             &:first-child {
@@ -1669,12 +1681,6 @@ section {
             background-color: #565f64;
         }
 
-        &:nth-child(n+3) {
-            .c-web__step--desc {
-                transform: translateX(-1px);
-            }
-        }
-
         &:nth-child(5) {
             background-color: #7a89a8;
         }
@@ -1725,10 +1731,10 @@ section {
 
         @include sp {
             font-size: 0.8rem;
-            margin: 20px 12px 26px;
-            padding-top: 4px;
+            margin: 16px 10px 27px 16px;
+            padding-top: 9px;
             line-height: 1;
-            transform: translateX(-3px);
+            transform: translateX(-6px);
         }
     }
 
@@ -1764,7 +1770,7 @@ section {
         padding: 41px 0 44px;
 
         @include sp {
-            padding: 7px 0 0;
+            padding: 2% 0 9.5%;
         }
     }
 
@@ -1773,15 +1779,14 @@ section {
         margin-top: 20px;
         display: flex;
         column-gap: 53px;
-
-        @include tab {
+        @include laptop {
             flex-direction: column;
-            margin: 20px auto 0;
+            margin: 19px auto 0;
             padding: 0 10px;
         }
 
         @include sp {
-            max-width: 240px;
+            max-width: 300px;
         }
     }
 
@@ -1798,11 +1803,13 @@ section {
         height: 52px;
         text-align: center;
         transform: translate(-1px, 0);
+        @include laptop {
+            margin: 0 auto;
+        }
 
         @include tab {
             min-width: 260px;
             max-height: 54px;
-            margin: 0 auto;
         }
 
         @include sp {
@@ -1823,8 +1830,7 @@ section {
         line-height: 1.7;
         color: #fff;
         transform: translate(-1px, -5px);
-
-        @include tab {
+        @include laptop {
             margin: 2% auto 0;
         }
 
@@ -1833,14 +1839,33 @@ section {
             text-align: center;
             line-height: 1.2;
             margin: 5.7% auto 0;
-            letter-spacing: 1.4px;
-            transform: translate(2px, -5px);
+            letter-spacing: 1.2px;
+            transform: translate(0, -8px);
         }
     }
 
     .c-web__top--titleedit {
         margin-left: -5px;
         margin-right: 5px;
+
+        @include sp {
+            margin-left: -1px;
+            margin-right: -2px;
+        }
+    }
+
+    .c-web__top--titlebottom {
+        @include sp {
+            margin-left: -1px;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .c-web__top--titlebottom2 {
+        @include sp {
+            margin-left: -1px;
+            letter-spacing: -0.4px;
+        }
     }
 
     .c-web__top--desc {
@@ -1851,13 +1876,31 @@ section {
         margin-left: 96px;
         margin-top: 14px;
 
-        @include tab {
+        @include laptop {
             margin: 0 auto;
             text-align: center;
         }
 
         @include sp {
             font-size: 1rem;
+            line-height: 1.6;
+            transform: translate(-1px, 0);
+            letter-spacing: 0.2px;
+        }
+    }
+
+    .c-web__top--descmd {
+        @include sp {
+            margin-left: 1px;
+            margin-right: -2px;
+        }
+    }
+
+    .c-web__top--descbt {
+        @include sp {
+            margin-left: 6px;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
         }
     }
 
@@ -1880,6 +1923,10 @@ section {
 
         @include tab {
             flex-direction: column;
+        }
+
+        @include sp {
+            padding: 37px 21px 36px;
         }
     }
 
@@ -1921,6 +1968,10 @@ section {
         @include tab {
             height: unset;
         }
+
+        @include sp {
+            height: 126px;
+        }
     }
 
     .c-web__item--text {
@@ -1933,7 +1984,10 @@ section {
         transform: translateX(-8px);
 
         @include sp {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
+            letter-spacing: -1.7px;
+            line-height: 1.6;
+            transform: translateX(-9px);
         }
     }
 }
@@ -1942,10 +1996,17 @@ section {
     padding: 53px 0 26px;
     margin: 0 auto;
 
+    @include sp {
+        margin: 124px auto 0;
+        padding: 0;
+    }
+
     .c-contact__content {
-        margin-bottom: 92px;
-        // max-height: 700px;
-        // height: 100vh;
+        margin-bottom: 85px;
+
+        @include sp {
+            margin-bottom: 7%;
+        }
     }
 
     .c-contact__map {
@@ -1953,14 +2014,18 @@ section {
 
         iframe {
             width: 100%;
+
+            @include sp {
+                height: 290px;
+            }
         }
 
         @include laptop {
-            width: 40%;
+            width: 100%;
         }
 
-        @include tab {
-            width: 100%;
+        @include sp {
+            height: 290px;
         }
     }
 
@@ -1968,13 +2033,11 @@ section {
         width: 50%;
         background-color: #ededed;
         padding: 1.5%;
+        margin: 0 auto 0.4%;
 
         @include laptop {
-            width: 60%;
-        }
-
-        @include tab {
             width: 100%;
+            padding: 1.5% 1.5% 9%;
         }
     }
 
@@ -1986,6 +2049,10 @@ section {
         margin: 0 auto;
         align-items: center;
         padding-top: 0.5%;
+
+        @include sp {
+            width: 90%;
+        }
     }
 
 
@@ -1999,6 +2066,19 @@ section {
         margin-bottom: 1.7%;
         margin-top: 18.5%;
         padding-right: 9.5%;
+
+        @include laptop {
+            margin-top: 0;
+        }
+
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 2.4px;
+            margin-top: 9%;
+            padding-right: unset;
+            transform: translateX(10px);
+            margin-bottom: -0.5%;
+        }
     }
 
     .c-contact__hr {
@@ -2008,6 +2088,12 @@ section {
         height: 1px;
         margin: 16px auto 34px;
         transform: translateX(-32px);
+
+        @include sp {
+            width: 37px;
+            transform: translateX(7px);
+            margin: 16px auto;
+        }
 
     }
 
@@ -2019,11 +2105,23 @@ section {
         letter-spacing: -0.2px;
         line-height: 1;
         transform: translateX(-32px);
+
+        @include sp {
+            font-size: 1.4rem;
+            transform: translateX(7px);
+        }
     }
 
     .c-contact__table {
         margin-top: 15.5%;
         margin-left: -15.7%;
+
+        @include sp {
+            margin: 47px auto 0;
+            padding: 0 10%;
+            width: 100%;
+            max-width: 400px;
+        }
     }
 
     .c-contact__tr {
@@ -2032,13 +2130,33 @@ section {
         &:first-child {
             .c-contact__td {
                 margin-top: -3px;
+
+                @include sp {
+                    margin-top: -2px;
+                }
             }
         }
-    }
 
-    .c-contact__tr:nth-child(3) {
-        .c-contact__td {
-            padding-top: 2px;
+        &:nth-child(2) {
+            .c-contact__td {
+                @include sp {
+                    transform: translate(-1px, -1px);
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .c-contact__td {
+                padding-top: 2px;
+
+                @include sp {
+                    padding-top: 1px;
+                }
+            }
+        }
+
+        @include sp {
+            margin-bottom: 6px;
         }
     }
 
@@ -2051,6 +2169,12 @@ section {
         line-height: 1.8;
         letter-spacing: 0;
         margin-left: 21px;
+
+        @include sp {
+            font-size: 1.3rem;
+            margin-left: 13.5px;
+            width: 71%;
+        }
     }
 
     .c-contact__td--edit {
@@ -2069,6 +2193,14 @@ section {
         text-align: center;
         padding: 9px 0;
         display: block;
+
+        @include sp {
+            font-size: 1.3rem;
+            width: 60px;
+            height: 23.5px;
+            padding: 4px 0;
+            transform: translateX(5px);
+        }
     }
 
     .c-contact__note {
@@ -2077,6 +2209,12 @@ section {
         color: #000;
         font-size: 1.5rem;
         font-weight: 400;
+
+        @include sp {
+            font-size: 0.8rem;
+            transform: translate(21px, -2px);
+
+        }
     }
 
     .c-contact__note--edit {
@@ -2088,14 +2226,15 @@ section {
         max-width: 1200px;
         width: 100%;
         display: block;
-        margin: 91px auto 87px;
+        margin: 85px auto 87px;
 
-        @include tab {
+        @include laptop {
             max-width: 640px;
         }
 
         @include sp {
             max-width: 319px;
+            margin: 0 auto 5%;
         }
     }
 
@@ -2112,6 +2251,16 @@ section {
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         text-align: center;
+        @include laptop {
+            max-width: 600px;
+        }
+
+        @include sp {
+            font-size: 2.4rem;
+            max-width: 319px;
+            letter-spacing: 2.4px;
+            padding: 11% 0 8.5%;
+        }
     }
 
 
