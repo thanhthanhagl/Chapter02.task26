@@ -19,3 +19,4 @@ https://drive.google.com/drive/folders/14RxRy2aRlWHln4jLGSahc1DvW5nNS8o3?usp=sha
 - Khi xuất file ảnh cần lưu ý đến độ lệch `1px`. Đặc biệt, illustrator thường được sử dụng nhiều trong các thiết kế dùng để in ấn nên sẽ xảy ra trường hợp pixel grid không phù hợp (chỉ định bằng mm hoặc pt). Lúc đó, hãy sử dụng pixel preview và cẩn thận không để xảy ra việc chênh lệch "1 px" trong file ảnh được xuất ra.
 - Tuân thủ qui tắc của Flocss và đặt tên class CSS sao cho không xảy ra xung đột về tên class trong trường hợp có thêm các trang con được tạo thêm sau này.
 - Không lạm dụng properties tiện dụng `display:flex` trong lúc code. Đối với các yếu tố block xếp ngang nhau thì nhiều lúc chỉ cần dùng `display: inline-block` hoặc `float: left` là đủ. Nên ý thức sử dụng những properties đó.
+https://docs.google.com/spreadsheets/d/1aFufVowLtThyqiFjk-ZDiSbHOqNhK_t2MMdQb63fYmk/edit#gid=0

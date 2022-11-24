@@ -10,7 +10,7 @@
 // margin
 //------------------------------------------------------------
 .c-web {
-    .c-web__heading--letter {
+    .c-web__headingletter {
         margin-top: 30px;
         transform: translate(2px, 1px);
 
@@ -20,7 +20,7 @@
         }
     }
 
-    .c-web__heading--people {
+    .c-web__headingpeople {
         margin-top: 22px;
         transform: translateX(2px);
 
@@ -39,7 +39,7 @@
         }
     }
 
-    .c-web__heading--note {
+    .c-web__headingnote {
         margin-top: 25px;
 
         @include sp {
@@ -55,7 +55,7 @@
         }
     }
 
-    .c-web__heading--document {
+    .c-web__headingdocument {
         margin-top: 28px;
         transform: translateY(1px);
 
@@ -72,7 +72,7 @@
         }
     }
 
-    .c-web__heading--gift {
+    .c-web__headinggift {
         margin-top: 25px;
         transform: translateY(1px);
 
@@ -93,7 +93,7 @@
         }
     }
 
-    .c-web__item--textedit {
+    .c-web__itemtextedit {
         margin-right: -3px;
         margin-left: -1px;
 
@@ -103,23 +103,23 @@
         }
     }
 
-    .c-web__p--bottom {
+    .c-web__pbottom {
         margin-left: -5px;
     }
 
     .c-web__item1 {
         @include sp {
-            .c-web__item--text {
+            .c-web__itemtext {
                 font-size: 1.1rem;
                 line-height: 1.7;
             }
 
-            .c-web__p--top {
+            .c-web__ptop {
                 transform: translateX(0);
                 letter-spacing: -2.2px;
             }
 
-            .c-web__p--bottom {
+            .c-web__pbottom {
                 transform: translate(2.5px, -2px);
             }
         }
@@ -127,7 +127,7 @@
     }
 
     .c-web__item2 {
-        .c-web__p--top {
+        .c-web__ptop {
             margin-left: -3px;
             letter-spacing: -2px;
         }
@@ -137,12 +137,12 @@
         }
 
         @include sp {
-            .c-web__p--top {
+            .c-web__ptop {
                 margin-left: 14px;
                 letter-spacing: -1.5px;
             }
 
-            .c-web__p--bottom {
+            .c-web__pbottom {
                 margin-left: 15px;
                 letter-spacing: -0.5px;
             }
@@ -150,17 +150,17 @@
     }
 
     .c-web__item3 {
-        .c-web__p--bottom {
+        .c-web__pbottom {
             margin-left: 0;
         }
 
         @include sp {
-            .c-web__p--top {
+            .c-web__ptop {
                 margin-left: 19px;
                 letter-spacing: -0.5px;
             }
 
-            .c-web__p--bottom {
+            .c-web__pbottom {
                 margin-left: 20px;
                 letter-spacing: -0.5px;
             }
@@ -168,7 +168,7 @@
     }
 
     .c-web__item4 {
-        .c-web__item--text {
+        .c-web__itemtext {
             letter-spacing: -1.6px;
 
             @include sp {
@@ -176,7 +176,7 @@
             }
         }
 
-        .c-web__p--top {
+        .c-web__ptop {
             margin-left: 1px;
 
             @include sp {
@@ -185,7 +185,7 @@
             }
         }
 
-        .c-web__p--bottom {
+        .c-web__pbottom {
             letter-spacing: -0.8px;
 
             @include sp {
@@ -194,7 +194,7 @@
             }
         }
 
-        .c-web__item--textedit {
+        .c-web__itemtextedit {
             @include sp {
                 margin-right: -3px;
                 margin-left: 3px;
@@ -207,7 +207,7 @@
     }
 
     .c-web__item5 {
-        .c-web__p--top {
+        .c-web__ptop {
             transform: translate(12px, -1px);
 
             @include sp {
@@ -216,7 +216,7 @@
             }
         }
 
-        .c-web__p--bottom {
+        .c-web__pbottom {
             transform: translate(7px, 0);
             @include sp {
                 transform: translate(3px, 0);
@@ -234,7 +234,7 @@
     }
 
     .c-web__item6 {
-        .c-web__item--text {
+        .c-web__itemtext {
             margin-left: -6px;
 
             @include sp {
@@ -250,7 +250,7 @@
     }
 
     .c-web__item7 {
-        .c-web__item--text {
+        .c-web__itemtext {
             letter-spacing: -1.5px;
 
             @include sp {
@@ -259,7 +259,7 @@
             }
         }
 
-        .c-web__p--bottom {
+        .c-web__pbottom {
             margin-left: 0;
         }
 
@@ -270,7 +270,7 @@
     }
 
     .c-web__item8 {
-        .c-web__p--top {
+        .c-web__ptop {
             margin-left: -2px;
 
             @include sp {
@@ -278,12 +278,12 @@
             }
         }
 
-        .c-web__item--textedit {
+        .c-web__itemtextedit {
             margin-right: 1px;
             margin-left: -7px;
         }
 
-        .c-web__p--bottom {
+        .c-web__pbottom {
             margin-left: -2px;
 
             @include sp {
@@ -297,7 +297,7 @@
         }
 
         @include sp {
-            .c-web__item--textedit {
+            .c-web__itemtextedit {
                 margin-left: -1px;
                 margin-right: -1px;
             }
@@ -305,13 +305,13 @@
     }
 
     .c-web__item9 {
-        .c-web__item--text {
+        .c-web__itemtext {
             @include sp {
                 letter-spacing: -0.5px;
             }
         }
 
-        .c-web__p--top {
+        .c-web__ptop {
             margin-left: 7px;
 
             @include sp {
@@ -319,7 +319,7 @@
             }
         }
 
-        .c-web__item--textedit {
+        .c-web__itemtextedit {
             letter-spacing: 1px;
             margin-right: 0;
             margin-left: 4px;
@@ -330,7 +330,7 @@
             }
         }
 
-        .c-web__p--bottom {
+        .c-web__pbottom {
             margin-left: 1px;
 
             @include sp {
@@ -347,20 +347,20 @@
     .c-web__item10 {
         border-right: 0;
 
-        .c-web__item--text {
+        .c-web__itemtext {
             @include sp {
                 letter-spacing: -0.5px;
             }
         }
 
-        .c-web__p--top {
+        .c-web__ptop {
             margin-left: 27px;
             @include sp {
                 margin-left: 15px;
             }
         }
 
-        .c-web__p--bottom {
+        .c-web__pbottom {
             margin-left: 28px;
             @include sp {
                 margin-left: 16px;
@@ -370,7 +370,7 @@
 }
 
 .c-house {
-    .c-house__desc--edit {
+    .c-house__descedit {
         font-size: 3.4rem;
         margin-left: -9px;
         margin-right: -15px;
@@ -384,17 +384,17 @@
 }
 
 .c-case01 {
-    .c-case01--span {
+    .c-case01span {
         margin-left: -5px;
     }
 
-    .c-case01--spansp {
+    .c-case01spansp {
         @include sp {
             margin-left: -2px;
         }
     }
 
-    .c-case01--edit {
+    .c-case01edit {
         margin-left: -6px;
 
         @include sp {
@@ -404,7 +404,7 @@
 }
 
 .c-case02 {
-    .c-case02--edit {
+    .c-case02edit {
         margin-left: -8px;
 
         @include sp {
@@ -412,7 +412,7 @@
         }
     }
 
-    .c-case02--span {
+    .c-case02span {
         margin-left: 3px;
         margin-right: -4px;
 
@@ -425,11 +425,11 @@
 
 
 .c-case03 {
-    .c-case03--edit {
+    .c-case03edit {
         margin: 0 -3px;
     }
 
-    .c-case03--span {
+    .c-case03span {
         margin-left: -8px;
 
         @include sp {

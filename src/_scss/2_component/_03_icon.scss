@@ -5,7 +5,7 @@ icon
 /*
 ------------------------------------------------------------*/
 .c-web {
-    .c-web__icon--letter {
+    .c-web__iconletter {
         width: 41px;
         transform: translate(2px, 6px);
         @include sp {
@@ -14,7 +14,7 @@ icon
         }
     }
 
-    .c-web__icon--people {
+    .c-web__iconpeople {
         width: 36px;
         transform: translate(2px, -1px);
         @include sp {
@@ -24,7 +24,7 @@ icon
         }
     }
 
-    .c-web__icon--note {
+    .c-web__iconnote {
         width: 33px;
         transform: translate(1px, 4px);
         @include sp {
@@ -33,7 +33,7 @@ icon
         }
     }
 
-    .c-web__icon--document {
+    .c-web__icondocument {
         width: 35px;
         transform: translate(0, 7px);
         @include sp {
@@ -41,7 +41,7 @@ icon
         }
     }
 
-    .c-web__icon--gift { 
+    .c-web__icongift { 
         width: 38px;
         transform: translate(1px, 3px);
         @include sp {
