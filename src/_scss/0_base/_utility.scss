@@ -386,11 +386,14 @@
 .c-case01 {
     .c-case01span {
         margin-left: -5px;
+        @include sp {
+            margin-left: -2px;
+        }     
     }
 
     .c-case01spansp {
         @include sp {
-            margin-left: -2px;
+            margin-left: -3px;
         }
     }
 
