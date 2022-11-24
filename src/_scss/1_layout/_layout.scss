@@ -430,18 +430,18 @@ section {
         }
     }
 
-    .c-model__imgtext {
-        position: absolute;
-        top: 25.5%;
-        right: 10.5%;
+    // .c-model__imgtext {
+    //     position: absolute;
+    //     top: 25.5%;
+    //     right: 10.5%;
 
-        @include sp {
-            width: 21px;
-            top: 35%;
-            right: 8%;
-        }
+    //     @include sp {
+    //         width: 21px;
+    //         top: 35%;
+    //         right: 8%;
+    //     }
 
-    }
+    // }
 
     .c-model__heading {
         font-weight: bold;
@@ -451,9 +451,56 @@ section {
         line-height: 1.8;
         position: relative;
 
+        &::after {
+            position: absolute;
+            content: url("./assets/img/icontext.svg");
+            @include sp {
+                transform: scale(0.5);
+            }
+        }
+
         @include sp {
             font-size: 1.4rem;
             transform: translate(41px, -1px);
+        }
+    }
+
+    .c-model__imgfirst {
+        &::after {
+            top: -25%;
+            right: 10.5%;
+            @include laptop {
+                right: -1%;
+            }
+            @include sp {
+                top: -52%;
+                right: 18.5%;
+            }
+        }
+    }
+
+    .c-model__imgsecond {
+        &::after {
+            top: -25%;
+            right: 0;
+            @include laptop {
+                right: -1%;
+            }
+            @include sp {
+                top: -49%;
+                right: 2%;
+            }
+        }
+    }
+
+    .c-model__imgthird {
+        &::after {
+            top: -25%;
+            right: -1%;
+            @include sp {
+                top: -55%;
+                right: 8%;
+            }
         }
     }
 
@@ -521,16 +568,19 @@ section {
             }
         }
 
-        .c-model__imgtext {
-            position: absolute;
-            top: 25%;
-            right: -0.5%;
+        // .c-model__imgtext {
+        //     position: absolute;
+        //     top: 25%;
+        //     right: -0.5%;
 
-        }
+        // }
 
         .c-model__heading {
             margin-left: 27px;
             transform: translateY(-1px);
+            @include laptop {
+                margin-left: 0;
+            }
 
             @include sp {
                 margin-left: 12%;
@@ -541,6 +591,9 @@ section {
         .c-model__text {
             margin-left: -17px;
             transform: translateX(2px);
+            @include laptop {
+                margin-left: 0;
+            }
 
             @include sp {
                 margin-left: 12%;
@@ -574,16 +627,16 @@ section {
             }
         }
 
-        .c-model__imgtext {
-            position: absolute;
-            top: 25%;
-            right: -1.5%;
+        // .c-model__imgtext {
+        //     position: absolute;
+        //     top: 25%;
+        //     right: -1.5%;
 
-            @include sp {
-                top: 31%;
-                right: 0;
-            }
-        }
+        //     @include sp {
+        //         top: 31%;
+        //         right: 0;
+        //     }
+        // }
 
         .c-model__text {
             margin-right: -20px;
