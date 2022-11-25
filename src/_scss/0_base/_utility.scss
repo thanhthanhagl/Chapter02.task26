@@ -393,7 +393,7 @@
 
     .c-case01spansp {
         @include sp {
-            margin-left: -3px;
+            margin-left: -1px;
         }
     }
 
@@ -401,7 +401,7 @@
         margin-left: -6px;
 
         @include sp {
-            margin-left: -4px;
+            margin-left: -3px;
         }
     }
 }
@@ -411,7 +411,7 @@
         margin-left: -8px;
 
         @include sp {
-            margin-left: -6px;
+            margin-left: -5px;
         }
     }
 

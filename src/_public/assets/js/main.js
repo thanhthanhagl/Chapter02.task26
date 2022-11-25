@@ -1,9 +1,6 @@
-//const { Value } = require("sass");
-
-//console.log("main.js");
 $(document).ready(function () {
     $('.c-design__slider').slick({
-        infinite: true,//loop
+        infinite: true,
         dots: false,
         arrows: true,
         autoplay: true,
