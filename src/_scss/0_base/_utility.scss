@@ -52,6 +52,7 @@
 
         @include sp {
             margin: 8px 12px 27px;
+            padding-top: 8px;
         }
     }
 
@@ -69,6 +70,7 @@
 
         @include sp {
             margin: 9px 12px 26px;
+            padding-top: 8px;
         }
     }
 
@@ -78,7 +80,6 @@
 
         @include sp {
             margin-top: 20px;
-            transform: translateY(0);
             letter-spacing: -0.5px;
         }
     }
@@ -98,7 +99,7 @@
         margin-left: -1px;
 
         @include sp {
-            margin-right: -2px;
+            margin-right: -3px;
             margin-left: -1px;
         }
     }
@@ -116,11 +117,11 @@
 
             .c-web__ptop {
                 transform: translateX(0);
-                letter-spacing: -2.2px;
+                letter-spacing: -2px;
             }
 
             .c-web__pbottom {
-                transform: translate(2.5px, -2px);
+                transform: translate(2.5px, -1px);
             }
         }
 

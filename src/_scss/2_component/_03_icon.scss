@@ -46,7 +46,7 @@ icon
         transform: translate(1px, 3px);
         @include sp {
             width: 18px;
-            transform: translate(-2px, 5px);
+            transform: translate(-2px, 6px);
         }
     }
 
@@ -59,7 +59,7 @@ icon
         }
         @include sp {
             width: 45%;
-            margin: 17px 0 10px;
+            margin: 17px 0 9.5px;
             transform: translateX(0);
         }
     } 
@@ -73,7 +73,7 @@ icon
         }
         @include sp {
             width: 41%;
-            margin: 13px 0 16px;
+            margin: 13px 0 15px;
             transform: translateX(3px);
         }
     }
@@ -115,7 +115,7 @@ icon
         }
         @include sp {
             width: 39%;
-            margin: 16px 0 8px;
+            margin: 16px 0 6px;
             transform: translateX(0);
         }
     }
@@ -129,7 +129,7 @@ icon
         }
         @include sp {
             width: 41%;
-            margin: 12px 0 14px;
+            margin: 12px 0;
             transform: translateX(1px);
         }
     }
@@ -142,8 +142,8 @@ icon
             width: 32.3%;
         }
         @include sp {
-            width: 37%;
-            margin: 14px 0 16px;
+            width: 36%;
+            margin: 15px 0 16px;
             transform: translateX(0);
         }
     }
@@ -157,7 +157,7 @@ icon
         }
         @include sp {
             width: 48%;
-            margin: 16px 0 11px;
+            margin: 16px 0 10px;
             transform: translateX(1px);
         }
     }
@@ -171,7 +171,7 @@ icon
         }
         @include sp {
             width: 53%;
-            margin: 14px 0 11px;
+            margin: 14px 0 10px;
             transform: translateX(0);
         }
     }
@@ -185,7 +185,7 @@ icon
         }
         @include sp {
             width: 50%;
-            margin: 13px 0 6px;
+            margin: 13px 0 5px;
             transform: translateX(-1px);
         }
     }    
