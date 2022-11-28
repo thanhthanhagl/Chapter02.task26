@@ -88,7 +88,7 @@
         transform: translateX(0);
 
         @include sp {
-            margin: 8px 13px 27px;
+            margin: 9px 13px 27px;
             padding-top: 9px;
             transform: translateX(-1px);
         }
@@ -212,7 +212,7 @@
             transform: translate(12px, -1px);
 
             @include sp {
-                transform: translate(4px, 0);
+                transform: translate(4px, 1px);
                 letter-spacing: -0.5px;
             }
         }
@@ -220,7 +220,7 @@
         .c-web__pbottom {
             transform: translate(7px, 0);
             @include sp {
-                transform: translate(3px, 0);
+                transform: translate(3px, 1px);
                 letter-spacing: -0.5px;
             }
         }
@@ -239,7 +239,7 @@
             margin-left: -6px;
 
             @include sp {
-                transform: translate(3px, 1px);
+                transform: translate(3px, 2px);
                 letter-spacing: 0;
             }
         }
@@ -256,7 +256,7 @@
 
             @include sp {
                 letter-spacing: -0.7px;
-                transform: translate(-1px);
+                transform: translate(0);
             }
         }
 
