@@ -422,9 +422,8 @@ section {
 
     .c-model__item:nth-child(2) {
         .c-model__colleft {
-            width: 51%;
-            padding-left: 9%;
-            transform: translate(6px, -18px);
+            width: 42.5%;
+            transform: translate(2%, -5%);
             @include tab {
                 width: 100%;
                 margin: 0 auto;
@@ -434,15 +433,15 @@ section {
 
         .c-model__colright {
             margin-left: 0;
-            margin-right: 52px;
+            margin-right: 13%;
             @include tab {
                 margin-right: 0;
             }
         }
 
         .c-model__merit {
-            margin-left: -54px;
-            margin-top: -3px;
+            margin-left: -11%;
+            margin-top: -0.5%;
             @include tab {
                 margin-top: 0;
             }
@@ -453,7 +452,7 @@ section {
         }
 
         .c-model__heading {
-            margin-left: 27px;
+            margin-left: 5%;
             transform: translateY(-1px);
             @include laptop {
                 margin-left: 0;
@@ -465,8 +464,7 @@ section {
         }
 
         .c-model__text {
-            margin-left: -17px;
-            transform: translateX(2px);
+            margin-left: -2.5%;
             @include laptop {
                 margin-left: 0;
             }
@@ -505,7 +503,7 @@ section {
         }
 
         .c-model__heading {
-            transform: translateY(-1px);
+            transform: translateY(-2px);
 
             @include sp {
                 transform: translate(35px, -1px);
@@ -513,7 +511,7 @@ section {
         }
 
         .c-model__text {
-            margin-right: -20px;
+            margin-right: -4%;
             transform: translateY(-1px);
 
             @include sp {
@@ -544,8 +542,8 @@ section {
     }
 
     .c-model__merit {
-        margin-top: -73px;
-        margin-left: -82px;
+        margin-top: -14%;
+        margin-left: -15.5%;
         @include tab {
             margin-top: 0;
             margin-left: -52px;
@@ -705,7 +703,7 @@ section {
         @include tab {
             top: unset;
             left: 65.3%;
-            bottom: -5%;
+            bottom: -6.7%;
         }
 
         @include sp {
@@ -905,57 +903,62 @@ section {
 
 .c-design {
     padding-top: 6.4%;
+    position: relative;
 
     @include sp {
         padding-top: 5.2%;
         margin: 0 auto;
     }
 
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1204px;
+        height: 527px;
+        top: 35%;
+        right: 0%;
+        z-index: -1;
+        background-color: #ededed;
+        pointer-events: none;
+
+        @include tab {
+            width: 78%;
+            right: -28%;
+            height: 327px;
+            top: 82%;
+        }
+
+        @include sp {
+            height: 257px;
+            top: 82%;
+        }
+    }
+
     .c-design__slick {
         position: relative;
         width: 1440px;
         max-width: 90%;
+        z-index: 1;
 
         @include sp {
             max-width: 96%;
             height: 200px;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 1204px;
-            height: 527px;
-            top: 83.5%;
-            right: -33.2%;
-            z-index: -1;
-            background-color: #ededed;
-            pointer-events: none;
-
-            @include tab {
-                width: 78%;
-                right: -28%;
-                height: 327px;
-                top: 82%;
-            }
-
-            @include sp {
-                height: 257px;
-                top: 82%;
-            }
-        }
+        }        
     }
 
-    .c-design__prev {
+    .slick-arrow {
         position: absolute;
-        background-image: url("./assets/img/prev.svg");
         display: block;
         width: 53px;
         height: 53px;
-        cursor: pointer;
-        right: 73px;
         bottom: -89px;
         border: none;
+        cursor: pointer;
+    }
+
+    .slick-prev {
+        background-image: url("./assets/img/prev.svg");
+        right: 73px;
 
         &:hover {
             cursor: pointer;
@@ -971,16 +974,9 @@ section {
         }
     }
 
-    .c-design__next {
-        position: absolute;
+    .slick-next {
         background-image: url("./assets/img/next.svg");
-        display: block;
-        width: 53px;
-        height: 53px;
-        cursor: pointer;
-        bottom: -89px;
         right: 0;
-        border: none;
 
         &:hover {
             cursor: pointer;
@@ -998,19 +994,11 @@ section {
 
     .c-design__slider {
         max-width: 1440px;
+        width: 100%;
+        overflow: hidden;
 
         @include sp {
             max-width: 375px;
-        }
-    }
-
-    .c-design__sliderslide {
-        max-width: 1440px;
-        max-height: 683px;
-
-        @include sp {
-            height: 200px;
-            object-fit: cover;
         }
     }
 
@@ -1821,7 +1809,7 @@ section {
             background-color: #7a89a8;
         }
         @include laptop {
-            width: 18.03%;
+            width: 17.5%;
         }
 
         @include tab {
